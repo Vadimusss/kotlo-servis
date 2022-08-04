@@ -1,0 +1,19 @@
+.page {
+  background-color: aquamarine;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  font-family: 'HarmoniaSansProCyr-Regular', Arial, Helvetica, sans-serif;
+}
+
+.page__page-header {
+  flex: calc(782px + (890 - 782) * ((100vw - 1350px) / (1920 - 1350))) 0 0;
+}
+
+.page__main {
+  flex: 100px 0 0;
+}
+
+.page__footer {
+  flex: 268px 0 0;
+}

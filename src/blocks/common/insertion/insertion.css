@@ -1,0 +1,25 @@
+.insertion {
+  padding-left: 36px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.insertion::before {
+  position: absolute;
+  content: '';
+  left: 1px;
+  width: 1px;
+  height: 100%;
+  background-color: #adadad;
+}
+
+.insertion::after {
+  position: absolute;
+  content: '';
+  left: 0;
+  width: 10px;
+  height: 36px;
+  background-image: url('insertion__bg.png');
+  background-repeat: no-repeat;
+}

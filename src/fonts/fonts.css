@@ -1,0 +1,28 @@
+@font-face {font-family: "HarmoniaSansProCyr-Regular";
+  src:
+  url('HarmoniaSansProCyr-Regular.woff2') format("woff2"),
+  url('HarmoniaSansProCyr-Regular.woff') format("woff");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {font-family: "HarmoniaSansProCyr-Bold";
+  src:
+  url('HarmoniaSansProCyr-Bold.woff2') format("woff2"),
+  url('HarmoniaSansProCyr-Bold.woff') format("woff");
+  font-style: bold;
+  font-weight: 600;
+}
+@font-face {font-family: "DIN Pro Condensed";
+  src:
+  url('../fonts/din_pro_condensed_regular.woff2') format('woff2'),
+  url('../fonts/din_pro_condensed_regular.woff') format('woff');
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {font-family: "DIN Pro Condensed";
+  src:
+  url('../fonts/din_pro_condensed_bold.woff2') format('woff2'),
+	url('../fonts/din_pro_condensed_bold.woff') format('woff');
+  font-style: bold;
+  font-weight: 600;
+}

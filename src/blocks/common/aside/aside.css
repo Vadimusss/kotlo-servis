@@ -1,0 +1,42 @@
+.aside {
+ display: flex;
+ flex-direction: column;
+ font-size: 17px;
+ row-gap: 14px;
+ width: 18px;
+ align-items: center;
+}
+
+.aside__name {
+  writing-mode: vertical-rl;
+  transform: rotate(-180deg);
+}
+
+.aside__number {
+  writing-mode: vertical-rl;
+  transform: rotate(-180deg);
+  color: #f3c766;
+  position: relative;
+  padding-top: 20px;
+}
+
+.aside__number::after {
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  bottom: 37px;
+  content: '';
+  background-color: #f3c766;
+}
+
+.aside__phone-link {
+  background-image: url('aside__phone-link-bg.png');
+  width: 16px;
+  height: 16px;
+}
+
+.aside__email-link {
+  background-image: url('aside__email-link-bg.png');
+  width: 18px;
+  height: 11px;
+}

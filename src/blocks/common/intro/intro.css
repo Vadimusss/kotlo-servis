@@ -1,0 +1,15 @@
+.intro {
+  font-size: 15px;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.intro::after {
+  position: absolute;
+  content: "";
+  width: 150px;
+  height: 2px;
+  left: 0;
+  top: 30px;
+  background: linear-gradient(to right,  #f3c766 0px,#f3c766 63px,#bfc1c3 64px,#bfc1c3 150px);
+}

@@ -1,0 +1,33 @@
+.main-menu-button {
+  display: none;
+}
+
+@media (max-width: 1270px) {
+  .main-menu-button {
+    position: relative;
+    display: flex;
+    flex: 0 0 100px;
+    row-gap: 6px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+  }
+
+  .main-menu-button::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 60px;
+    content: '';
+    background-color: #c8c8c8;
+  }
+
+  .main-menu-button__line {
+    flex: 0 0 6px;
+    width: 37px;
+    border-radius: 3px;
+    background-color: #000000;
+  }
+}

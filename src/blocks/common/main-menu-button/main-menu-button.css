@@ -6,7 +6,6 @@
   .main-menu-button {
     position: relative;
     display: flex;
-    flex: 0 0 100px;
     row-gap: 6px;
     flex-direction: column;
     justify-content: center;
@@ -29,5 +28,15 @@
     width: 37px;
     border-radius: 3px;
     background-color: #000000;
+  }
+}
+
+@media (max-width: 767px) {
+  .main-menu-button {
+    order: 3;
+  }
+
+  .main-menu-button__line {
+    background-color: #FFFFFF;
   }
 }

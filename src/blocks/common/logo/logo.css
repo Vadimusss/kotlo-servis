@@ -2,4 +2,18 @@
   background-image: url('logo__bg.png');
   width: 162px;
   height: 61px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 999px) {
+  .logo {
+    width: calc(137px + (162 - 137) * ((100vw - 767px) / (999 - 767)));
+  }
+}
+
+@media (max-width: 767px) {
+  .logo {
+    width: 137px;
+  }
 }

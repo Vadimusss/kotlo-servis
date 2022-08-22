@@ -40,3 +40,8 @@
   width: 18px;
   height: 11px;
 }
+@media (max-width: 999px) {
+  .aside {
+    display: none;
+  }
+}

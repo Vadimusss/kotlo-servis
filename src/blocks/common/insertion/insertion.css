@@ -23,3 +23,9 @@
   background-image: url('insertion__bg.png');
   background-repeat: no-repeat;
 }
+
+@media (max-width: 767px) {
+  .insertion {
+    padding-left: calc(29px + (36 - 29) * ((100vw - 360px) / (767 - 360)));
+  }
+}

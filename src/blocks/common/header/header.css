@@ -1,9 +1,18 @@
 .header__main-header {
   font-family: 'DIN Pro Condensed', Arial, Helvetica, sans-serif;
-  font-weight: normal;
+  font-weight: 400;
 }
 
 .header__main-header_major {
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 600;
+}
+
+.header__section-header {
+  font-family: 'DIN Pro Condensed', Arial, Helvetica, sans-serif;
+  font-weight: 300;
+}
+
+.header__accent {
+  font-weight: 600;
 }

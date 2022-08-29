@@ -40,8 +40,9 @@
   width: 18px;
   height: 11px;
 }
-@media (max-width: 999px) {
+
+@media (max-width: 870px) {
   .aside {
     display: none;
-  }
+   }
 }

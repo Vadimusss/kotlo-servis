@@ -1,7 +1,7 @@
 .main-menu {
   display: flex;
-  column-gap: calc(25px + (42 - 25) * ((100vw - 1350px) / (1920 - 1350)));
-  padding-left: calc(32px + (44 - 32) * ((100vw - 1350px) / (1920 - 1350)));
+  column-gap: 42px;
+  padding-left: 44px;
   background-image: url('main-menu__bg.png');
   background-repeat: no-repeat;
   background-position: 0 47%;
@@ -26,16 +26,18 @@
   color: #2c3137;
 }
 
-@media (max-width: 1550px) {
+@media (max-width: 1435px) {
   .main-menu {
-    column-gap: calc(32px + (54 - 32) * ((100vw - 1350px) / (1550 - 1350)));
+    padding-left: 33px;
+    column-gap: 35px;
   }
+
   .main-menu__item:last-child {
     color: #ffffff;
   }
 }
 
-@media (max-width: 1270px) {
+@media (max-width: 1110px) {
   .main-menu {
     display: none;
   }

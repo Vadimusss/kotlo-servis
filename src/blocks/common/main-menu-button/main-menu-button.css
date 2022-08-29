@@ -2,7 +2,7 @@
   display: none;
 }
 
-@media (max-width: 1270px) {
+@media (max-width: 1110px) {
   .main-menu-button {
     position: relative;
     display: flex;
@@ -18,7 +18,7 @@
     top: 0;
     left: 0;
     width: 1px;
-    height: 60px;
+    height: 38px;
     content: '';
     background-color: #c8c8c8;
   }
@@ -31,12 +31,11 @@
   }
 }
 
-@media (max-width: 767px) {
-  .main-menu-button {
-    order: 3;
+@media (max-width: 648px) {
+  .main-menu-button::before {
+    display: none;
   }
-
   .main-menu-button__line {
-    background-color: #FFFFFF;
+    background-color: #ffffff;
   }
 }

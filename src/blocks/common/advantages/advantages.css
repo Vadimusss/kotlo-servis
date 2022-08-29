@@ -1,0 +1,303 @@
+.advantages {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1342px 1fr;
+  grid-template-rows: 42px 114px 147px;
+  grid-template-areas: 'left-field intro right-field'
+    'left-field header right-field'
+    'left-field list right-field';
+}
+
+.advantages::before {
+  position: absolute;
+  z-index: 1000;
+  top: 2px;
+  left: calc(-243px - (0 + -243) * ((100vw - 1435px) / (1920 - 1435)));
+  width: 355px;
+  height: 514px;
+  content: '';
+  background-image: url('advantages__bg.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.advantages__intro {
+  z-index: 2000;
+  grid-area: intro;
+}
+
+.advantages__header {
+  z-index: 2000;
+  grid-area: header;
+  margin-left: -4px;
+  text-transform: uppercase;
+  font-size: 45px;
+}
+
+.advantages__list {
+  z-index: 2000;
+  display: flex;
+  grid-area: list;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.advantages__item {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4px;
+  background-position-y: 5px;
+}
+
+.advantages__item_type_experience {
+  height: 132px;
+  margin-top: 0;
+  padding-left: 162px;
+  background-image: url('advantages__experience-icon.png');
+  background-repeat: no-repeat;
+}
+
+.advantages__item_type_departure {
+  padding-left: 80px;
+  background-image: url('advantages__departure-icon.png');
+  background-repeat: no-repeat;
+  background-size: 65px 65px;
+}
+
+.advantages__item_type_warranty {
+  padding-left: 59px;
+  background-image: url('advantages__warranty-icon.png');
+  background-repeat: no-repeat;
+  background-size: 47px 64px;
+}
+
+.advantages__item_type_prices {
+  padding-left: 82px;
+  background-image: url('advantages__prices-icon.png');
+  background-repeat: no-repeat;
+  background-size: 68px 59px;
+}
+
+.advantages__item-header {
+  font-family: 'DIN Pro Condensed', Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.advantages__item-header_type_experience {
+  text-transform: uppercase;
+  font-family: 'DIN Pro Condensed Black', Arial, Helvetica, sans-serif;
+}
+
+.advantages__item-text {
+  font-size: 17px;
+}
+
+@media (max-width: 1435px) {
+  .advantages {
+    grid-template-columns: 1fr 1000px 1fr;
+    grid-template-rows: 42px 114px 160px;
+  }
+
+  .advantages::before {
+    top: 12px;
+    left: calc(-214px - (52 + -214) * ((100vw - 1110px) / (1435 - 1110)));
+    width: 321px;
+    height: 470px;
+  }
+
+  .advantages__header {
+    margin-left: -2px;
+  }
+
+  .advantages__item {
+    flex: 0 0 145px;
+    background-position-y: 2px;
+  }
+
+  .advantages__item_type_experience {
+    margin-top: 0;
+    padding-left: 142px;
+    background-image: url('advantages__experience-icon_sub1435px.png');
+    background-position-x: -3px;
+    background-position-y: 7px;
+  }
+
+  .advantages__item_type_departure {
+    padding-left: 75px;
+  }
+
+  .advantages__item_type_prices {
+    padding-left: 76px;
+  }
+}
+
+@media (max-width: 1110px) {
+  .advantages {
+    grid-template-columns: 1fr 768px 1fr;
+    grid-template-rows: 42px 82px 296px;
+  }
+
+  .advantages::before {
+    top: 30px;
+    left: calc(-136px - (14 + -136) * ((100vw - 870px) / (1110 - 870)));
+    width: 227px;
+    height: 335px;
+  }
+
+  .advantages__intro::after {
+    top: 24px;
+    left: 1px;
+  }
+
+  .advantages__list {
+    flex-wrap: wrap;
+  }
+
+  .advantages__item {
+    height: 125px;
+    margin-top: 0px;
+    flex: 0 0 209px;
+  }
+
+  .advantages__item_type_experience {
+    margin-left: -6px;
+    margin-top: -1px;
+    padding-left: 147px;
+  }
+
+  .advantages__item_type_departure {
+    background-size: 104px 110px;
+    padding-left: 127px;
+    margin-right: 14px;
+  }
+
+  .advantages__item_type_warranty {
+    background-size: 87px 118px;
+    padding-left: 117px;
+    margin-left: 25px;
+  }
+
+  .advantages__item_type_prices {
+    background-size: 98px 85px;
+    padding-left: 127px;
+    margin-right: 14px;
+  }
+}
+
+@media (max-width: 870px) {
+  .advantages {
+    grid-template-columns: 1fr 640px 1fr;
+    grid-template-rows: 42px 96px 285px;
+  }
+
+  .advantages::before {
+    top: 46px;
+    left: calc(-168px - (58 + -168) * ((100vw - 648px) / (870 - 648)));
+    width: 226px;
+    height: 328px;
+  }
+
+  .advantages__item {
+    background-position-y: -1px;
+  }
+
+  .advantages__item_type_experience {
+    margin-left: 4px;
+    margin-top: 0px;
+    background-position: -1px 8px;
+  }
+
+  .advantages__item_type_departure {
+    background-size: 84px 88px;
+    flex-basis: 150px;
+    padding-left: 97px;
+    margin-right: 4px;
+    margin-top: 5px;
+  }
+
+  .advantages__item_type_warranty {
+    background-size: 70px 94px;
+    margin-left: 70px;
+    padding-left: 81px;
+  }
+
+  .advantages__item_type_prices {
+    background-size: 80px 68px;
+    padding-left: 98px;
+    flex-basis: 154px;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 648px) {
+  .advantages {
+    grid-template-columns: 1fr 360px 1fr;
+    grid-template-rows: 69px 253px;
+    grid-template-areas: 'left-field header right-field'
+    'left-field list right-field';
+  }
+
+  .advantages::before {
+    top: -26px;
+    left: calc(-214px - (73 + -214) * ((100vw - 360px) / (648 - 360)));
+ }
+
+  .advantages__intro {
+    display: none;
+  }
+
+  .advantages__header {
+    font-size: 29.9px;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .advantages__list {
+    justify-content: left;
+  }
+
+  .advantages__item {
+    flex-basis: 130px;
+    background-position: 0 4px;
+  }
+
+  .advantages__item-header {
+    font-size: 22px;
+  }
+
+  .advantages__item-text {
+    font-size: 15px;
+    line-height: 17px;
+  }
+
+  .advantages__item_type_experience {
+    background-size: calc(44px + (53 - 44) * ((100vw - 360px) / (648 - 360))) calc(38px + (44 - 38) * ((100vw - 360px) / (648 - 360)));
+    padding-left: 60px;
+    background-position: calc(14px + (-14 + -2) * ((100vw - 360px) / (648 - 360))) 4px;
+    margin-left: -13px;
+  }
+  
+  .advantages__item-header_type_experience {
+    font-size: 22px;
+  }
+
+  .advantages__item_type_departure {
+    background-size: 40px 42px;
+    padding-left: 47px;
+    margin-right: 0;
+    flex-basis: 135px;
+  }
+
+  .advantages__item_type_warranty {
+    background-size: 36px 48px;
+    padding-left: 47px;
+    margin-left: 0;
+  }
+
+  .advantages__item_type_prices {
+    background-size: 39px 33px;
+    padding-left: 47px;
+    flex-basis: 135px;
+  }
+}

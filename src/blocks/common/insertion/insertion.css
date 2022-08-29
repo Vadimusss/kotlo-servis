@@ -1,31 +1,46 @@
 .insertion {
-  padding-left: 36px;
+  position: relative;
   display: flex;
   align-items: center;
-  position: relative;
+  padding-left: 36px;
+  line-height: 25px;
 }
 
 .insertion::before {
   position: absolute;
-  content: '';
   left: 1px;
   width: 1px;
   height: 100%;
+  content: '';
   background-color: #adadad;
 }
 
 .insertion::after {
   position: absolute;
-  content: '';
   left: 0;
   width: 10px;
   height: 36px;
+  content: '';
   background-image: url('insertion__bg.png');
   background-repeat: no-repeat;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1435px) {
   .insertion {
-    padding-left: calc(29px + (36 - 29) * ((100vw - 360px) / (767 - 360)));
+    padding-left: 26px;
+  }
+}
+
+@media (max-width: 648px) {
+  .insertion {
+    padding-left: 20px;
+  }
+
+  .insertion::before {
+    left: 0;
+  }
+
+  .insertion::after {
+    left: -1px;
   }
 }

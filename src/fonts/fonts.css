@@ -9,8 +9,15 @@
   src:
   url('HarmoniaSansProCyr-Bold.woff2') format("woff2"),
   url('HarmoniaSansProCyr-Bold.woff') format("woff");
-  font-style: bold;
+  font-style: normal;
   font-weight: 600;
+}
+@font-face {font-family: "DIN Pro Condensed";
+  src:
+  url('../fonts/din_pro_condensed_light.woff2') format('woff2'),
+  url('../fonts/din_pro_condensed_light.woff') format('woff');
+  font-style: normal;
+  font-weight: 300;
 }
 @font-face {font-family: "DIN Pro Condensed";
   src:
@@ -23,6 +30,13 @@
   src:
   url('../fonts/din_pro_condensed_bold.woff2') format('woff2'),
 	url('../fonts/din_pro_condensed_bold.woff') format('woff');
-  font-style: bold;
+  font-style: normal;
+  font-weight: 600;
+}
+@font-face {font-family: "DIN Pro Condensed Black";
+  src:
+  url('../fonts/din_pro_condensed_black.woff2') format('woff2'),
+	url('../fonts/din_pro_condensed_black.woff') format('woff');
+  font-style: normal;
   font-weight: 600;
 }

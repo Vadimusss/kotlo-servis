@@ -28,3 +28,13 @@
   content: '';
   background-color: #f3c766;
 }
+
+@media (max-width: 648px) {
+  .insertion-link {
+    font-size: 15px;
+  }
+
+  .insertion-link::before {
+    right: 30px;
+  }
+}

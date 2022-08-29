@@ -6,14 +6,8 @@
   background-repeat: no-repeat;
 }
 
-@media (max-width: 999px) {
+@media (max-width: 870px) {
   .logo {
-    width: calc(137px + (162 - 137) * ((100vw - 767px) / (999 - 767)));
-  }
-}
-
-@media (max-width: 767px) {
-  .logo {
-    width: 137px;
+    width: 135px;
   }
 }

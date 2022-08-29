@@ -1,5 +1,4 @@
 .page {
-  background-color: aquamarine;
   display: flex;
   flex-direction: column;
   margin: 0;
@@ -7,13 +6,13 @@
 }
 
 .page__page-header {
-  flex: calc(782px + (890 - 782) * ((100vw - 1350px) / (1920 - 1350))) 0 0;
+  flex: 1 0 min-content;
 }
 
 .page__main {
-  flex: 100px 0 0;
+  flex: 0 0 100px;
 }
 
 .page__footer {
-  flex: 268px 0 0;
+  flex: 0 0 268px;
 }

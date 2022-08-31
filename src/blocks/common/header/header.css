@@ -11,6 +11,7 @@
 .header__section-header {
   font-family: 'DIN Pro Condensed', Arial, Helvetica, sans-serif;
   font-weight: 300;
+  margin-left: -4px;
 }
 
 .header__accent {

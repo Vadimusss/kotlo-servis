@@ -29,7 +29,6 @@
 .advantages__header {
   z-index: 2000;
   grid-area: header;
-  margin-left: -4px;
   text-transform: uppercase;
   font-size: 45px;
 }
@@ -104,10 +103,6 @@
     left: calc(-214px - (52 + -214) * ((100vw - 1110px) / (1435 - 1110)));
     width: 321px;
     height: 470px;
-  }
-
-  .advantages__header {
-    margin-left: -2px;
   }
 
   .advantages__item {
@@ -188,7 +183,7 @@
 @media (max-width: 870px) {
   .advantages {
     grid-template-columns: 1fr 640px 1fr;
-    grid-template-rows: 42px 96px 285px;
+    grid-template-rows: 40px 96px 285px;
   }
 
   .advantages::before {

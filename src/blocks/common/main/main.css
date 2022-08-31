@@ -9,6 +9,10 @@
   margin-bottom: 160px;
 }
 
+.main__about-us {
+  margin-bottom: 191px;
+}
+
 @media (max-width: 1435px) {
   .main__callback-form {
     margin-bottom: 125px;
@@ -46,5 +50,13 @@
 
   .main__advantages {
     margin-bottom: 22px;
+  }
+  
+  .main__callback-form {
+    margin-bottom: 68px;
+  }
+
+  .main__about-us {
+    margin-bottom: 30px;
   }
 }

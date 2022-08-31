@@ -4,13 +4,14 @@
   align-items: center;
   padding-left: 36px;
   line-height: 25px;
+  height: min-content;
 }
 
 .insertion::before {
   position: absolute;
   left: 1px;
   width: 1px;
-  height: 100%;
+  height: calc(100% + 20px);
   content: '';
   background-color: #adadad;
 }

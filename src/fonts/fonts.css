@@ -1,11 +1,25 @@
-@font-face {font-family: "HarmoniaSansProCyr-Regular";
+@font-face {font-family: "HarmoniaSansProCyr";
+  src:
+  url('HarmoniaSansProCyr-Light.woff2') format("woff2"),
+  url('HarmoniaSansProCyr-Light.woff') format("woff");
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {font-family: "HarmoniaSansProCyr";
   src:
   url('HarmoniaSansProCyr-Regular.woff2') format("woff2"),
   url('HarmoniaSansProCyr-Regular.woff') format("woff");
   font-style: normal;
   font-weight: 400;
 }
-@font-face {font-family: "HarmoniaSansProCyr-Bold";
+@font-face {font-family: "HarmoniaSansProCyr";
+  src:
+  url('HarmoniaSansProCyr-SemiBd.woff2') format("woff2"),
+  url('HarmoniaSansProCyr-SemiBd.woff') format("woff");
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {font-family: "HarmoniaSansProCyr";
   src:
   url('HarmoniaSansProCyr-Bold.woff2') format("woff2"),
   url('HarmoniaSansProCyr-Bold.woff') format("woff");

@@ -30,21 +30,21 @@ module.exports = (env, argv) => {
         filename: ({ chunk }) => `${chunk.name}/${chunk.name}.css`,
       }),
       new Copy(copyPaths),
-      // new webpack.ProvidePlugin({
-      //  $: 'jquery',
-      //  jQuery: 'jquery',
-      //  'window.jQuery': 'jquery',
-      // }),
+      new webpack.ProvidePlugin({
+        $: 'jquery',
+        jQuery: 'jquery',
+        'window.jQuery': 'jquery',
+      }),
     ],
     module: {
       rules: [
-        // {
-        //   test: require.resolve('jquery'),
-        //   loader: 'expose-loader',
-        //   options: {
-        //     exposes: ['$', 'jQuery'],
-        //   },
-        // },
+        {
+          test: require.resolve('jquery'),
+          loader: 'expose-loader',
+          options: {
+            exposes: ['$', 'jQuery'],
+          },
+        },
         {
           test: /\.js$/,
           exclude: /node_modules/,

@@ -1,0 +1,138 @@
+.contacts {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 596px 746px 1fr;
+  grid-template-rows: 40px 80px min-content;
+  font-size: 17px;
+}
+
+.contacts__intro {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.contacts__header {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+.contacts__list {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+  margin: 15px 0;
+  padding-left: 31px;
+  padding-right: 160px;
+  list-style: none;
+}
+
+.contacts__contact {
+  padding-left: 44px;
+  background-repeat: no-repeat;
+  color: #2c3137;
+  margin-bottom: 31px;
+  min-height: 28px;
+  line-height: 30px;
+  background-position-y: 50%;
+}
+
+.contacts__contact_type_address {
+  background-image: url('contacts__address-icon.png');
+}
+
+.contacts__contact_type_phone {
+  background-image: url('contacts__phone-icon.png');
+}
+
+.contacts__contact_type_e-mail {
+  background-image: url('contacts__e-mail-icon.png');
+}
+
+.contacts__map {
+  position: relative;
+  overflow: hidden;
+  grid-column: 3 / 5;
+  grid-row: 1 / 4;
+  height: 406px;
+  background-color: aquamarine;
+}
+
+.contacts__map-dev-block {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1035px;
+  height: 406px;
+  background-image: url('contacts__map.jpg');
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 1435px) {
+  .contacts {
+    grid-template-columns: 1fr 490px 510px 1fr;
+  }
+
+  .contacts__list {
+    padding-right: 56px;
+    padding-left: 26px;
+  }
+
+  .contacts__contact {
+    padding-left: 48px;
+  }
+
+  .contacts__contact_type_address {
+    background-position-x: 5px;
+  }
+}
+
+@media (max-width: 1110px) {
+  .contacts {
+    grid-template-columns: 1fr 378px 390px 1fr;
+  }
+
+  .contacts__list {
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 870px) {
+  .contacts {
+    grid-template-columns: 1fr 366px 274px 1fr;
+  }
+
+  .contacts__list {
+    padding-right: 40px;
+    padding-left: 0;
+  }
+
+  .contacts__contact {
+    padding-left: 40px;
+    line-height: 26px;
+  }
+}
+
+@media (max-width: 648px) {
+  .contacts {
+    grid-template-columns: 1fr 360px 1fr;
+    grid-template-rows: 58px repeat(2, min-content);
+  }
+  
+  .contacts__intro {
+    display: none;
+  }
+
+  .contacts__header {
+    grid-row: 1 / 2;
+    text-align: center;
+  }
+  
+  .contacts__list {
+    grid-row: 2 / 3;
+    padding: 0 0 0 20px;
+  }
+
+  .contacts__map {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+  }
+}

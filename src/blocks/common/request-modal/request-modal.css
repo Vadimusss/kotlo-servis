@@ -1,0 +1,7 @@
+.request-modal__blocker {
+  z-index: 4000!important;
+}
+
+.request-modal__input {
+  max-width: 80%;
+}

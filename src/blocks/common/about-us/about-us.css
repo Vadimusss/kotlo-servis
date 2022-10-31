@@ -8,6 +8,7 @@
     'aside-left header slider-external-scene right-field'
     'aside-left slider slider-external-scene right-field'
     'aside-left insertion slider-external-scene right-field';
+    font-size: 17px;
 }
 
 .about-us__aside {
@@ -25,8 +26,6 @@
 .about-us__header {
   grid-area: header;
   margin-top: -10px;
-  text-transform: uppercase;
-  font-size: 45px;
 }
 
 .about-us__slider {
@@ -42,7 +41,6 @@
 }
 
 .about-us__paragraph {
-  font-size: 17px;
   line-height: 24px;
   margin: 26px 0 10px 0;
 }
@@ -69,7 +67,6 @@
 }
 
 .about-us__insertion {
-  font-size: 17px;
   display: flex;
   grid-area: insertion;
   margin-right: 50px;
@@ -83,7 +80,6 @@
   width: 346px;
   padding-left: 65px;
   background: linear-gradient(to right, #f3c766 0px, #f3c766 55px, #efefef 56px, #efefef 100%);
-  font-size: 17px;
   display: flex;
   align-items: center;
   display: flex;
@@ -298,9 +294,8 @@
   }
 
   .about-us__header {
-    margin-top: 0;
-    font-size: 30px;
     text-align: center;
+    margin-top: 0;
   }
 
   .about-us__slider {

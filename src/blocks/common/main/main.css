@@ -1,21 +1,14 @@
 .main {
-}
-
-.main {
   padding-top: 40px;
 }
 
-.main__callback-form {
-  margin-bottom: 160px;
-}
-
-.main__about-us {
-  margin-bottom: 191px;
+.main__section {
+  margin-bottom: 60px;
 }
 
 @media (max-width: 1435px) {
-  .main__callback-form {
-    margin-bottom: 125px;
+  .main {
+    padding-top: 0;
   }
 }
 
@@ -23,40 +16,16 @@
   .main {
     padding-top: 67px;
   }
-
-  .main__callback-form {
-    margin-bottom: 88px;
-  }
 }
 
 @media (max-width: 870px) {
   .main {
     padding-top: 35px;
   }
-
-  .main__advantages {
-    margin-bottom: 41px;
-  }
-
-  .main__callback-form {
-    margin-bottom: 51px;
-  }
 }
 
 @media (max-width: 648px) {
   .main {
     padding-top: 47px;
-  }
-
-  .main__advantages {
-    margin-bottom: 22px;
-  }
-  
-  .main__callback-form {
-    margin-bottom: 68px;
-  }
-
-  .main__about-us {
-    margin-bottom: 30px;
   }
 }

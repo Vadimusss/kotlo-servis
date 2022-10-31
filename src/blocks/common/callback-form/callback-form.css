@@ -1,7 +1,7 @@
 .callback-form {
   display: grid;
   grid-template-columns: 1fr 1342px 1fr;
-  grid-template-rows: 214px;
+  grid-template-rows: min-content;
   grid-template-areas: 'left-field wrapper right-field-gray';
 }
 
@@ -9,7 +9,7 @@
   position: relative;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 48px 40px 115px;
+  grid-template-rows: 48px 40px min-content;
   grid-template-areas: 'header'
   'description'
   'form';
@@ -47,19 +47,31 @@
   grid-area: header;
   margin-left: -5px;
   font-size: 35px;
+  text-transform: initial;
 }
 
 .callback-form__description {
   grid-area: description;
 }
 
+.callback-form .wpcf7 {
+  grid-area: form;
+}
+
+.callback-form .wpcf7-spinner {
+  position: absolute;
+  right: -60px;
+  display: none;
+}
+
 .callback-form__form {
   position: relative;
-  z-index: 2000;
   display: flex;
-  grid-area: form;
   justify-content: space-between;
   align-items: center;
+  max-width: 1139px;
+  margin: 27px 0;
+  flex-wrap: wrap;
 }
 
 .callback-form__input {
@@ -84,15 +96,18 @@
 @media (max-width: 1435px) {
   .callback-form {
     grid-template-columns: 1fr 1000px 1fr;
-    grid-template-rows: 190px;
   }
 
   .callback-form__wrapper {
-    grid-template-rows: 42px 22px 114px;
+    grid-template-rows: 42px 22px min-content;
     margin-left: 91px;
     padding-top: 9px;
     padding-left: 33px;
     background-size: auto 68px;
+  }
+
+  .callback-form__form {
+    max-width: 876px;
   }
 
   .callback-form__header {
@@ -119,6 +134,10 @@
     background-size: 264px 48px;
   }
 
+  .callback-form__form {
+    max-width: 710px;
+  }
+
   .callback-form__input {
     flex: 0 0 168px;
   }
@@ -131,11 +150,10 @@
 @media (max-width: 870px) {
   .callback-form {
     grid-template-columns: 1fr 640px 1fr;
-    grid-template-rows: 287px;
   }
 
   .callback-form__wrapper {
-    grid-template-rows: 42px 56px 162px;
+    grid-template-rows: 42px 56px min-content;
     margin-left: 64px;
     background-size: 264px 48px;
   }
@@ -151,6 +169,8 @@
 
   .callback-form__form {
     flex-wrap: wrap;
+    row-gap: 18px;
+    max-width: 543px;
   }
 
   .callback-form__input {
@@ -165,12 +185,11 @@
 @media (max-width: 648px) {
   .callback-form {
     grid-template-columns: 1fr 360px 1fr;
-    grid-template-rows: 490px;
     background-color: #efefef;
   }
 
   .callback-form__wrapper {
-    grid-template-rows: 30px 73px 271px;
+    grid-template-rows: 30px 73px min-content;
     margin-left: 0;
     padding-top: 76px;
     padding-left: 0;

@@ -1,0 +1,16 @@
+import './main.html';
+import '../fonts/fonts.css';
+import '../img/text-content__illustration_01.jpg';
+import '../img/text-content__illustration_02.jpg';
+import '../img/acv_logo.jpg';
+import '../img/baxi_logo.jpg';
+import '../img/bosch_logo.png';
+import '../img/buderus_logo.jpg';
+import '../img/lamborghini_logo.png';
+import '../img/lemax_logo.png';
+import '../img/protherm_logo.jpg';
+import '../img/sime_logo.png';
+import '../img/vaillant_logo.jpg';
+import '../img/viessmann_logo.jpg';
+import '../img/wolf_logo.jpg';
+import '../img/hansa_logo.jpg';

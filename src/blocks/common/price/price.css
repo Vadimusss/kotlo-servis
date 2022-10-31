@@ -1,0 +1,73 @@
+.price {
+  width: 100%;
+  border-spacing: 0px;
+  border-collapse: collapse;
+}
+
+.price__row {
+
+}
+
+.price__row_odd {
+  background-color: #efefef;
+}
+
+.price__sell {
+  padding: 10px 0;
+  box-sizing: border-box;
+}
+
+.price__sell_type_description {
+  width: 1001px;
+  padding-left: 24px;
+}
+
+.price__sell_type_measure {
+  width: 210px;
+}
+
+.price__sell_type_price {
+
+}
+
+@media (max-width: 1435px) {
+  .price__sell_type_description {
+    width: 694px;
+    padding-right: 50px;
+  }
+}
+
+@media (max-width: 1110px) {
+  .price__sell_type_description {
+    width: 516px;
+    padding-right: 20px;
+  }
+
+  .price__sell_type_measure {
+    width: 162px;
+  }
+}
+
+@media (max-width: 870px) {
+  .price__sell_type_description {
+    width: 442px;
+    padding-right: 10px;
+    padding-left: 17px;
+  }
+
+  .price__sell_type_measure {
+    width: 115px;
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 648px) {
+  .price__sell_type_description {
+    width: 220px;
+    padding-left: 10px;
+  }
+
+  .price__sell_type_measure {
+    width: 92px;
+  }
+}

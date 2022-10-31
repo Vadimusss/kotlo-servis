@@ -29,8 +29,6 @@
 .advantages__header {
   z-index: 2000;
   grid-area: header;
-  text-transform: uppercase;
-  font-size: 45px;
 }
 
 .advantages__list {
@@ -243,8 +241,6 @@
   }
 
   .advantages__header {
-    font-size: 29.9px;
-    margin-left: 0;
     text-align: center;
   }
 

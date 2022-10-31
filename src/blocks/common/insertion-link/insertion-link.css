@@ -11,8 +11,8 @@
 
 .insertion-link::after {
   position: absolute;
-  top: 44%;
-  right: 0;
+  top: calc(50% - 7px);
+  right: -55px;
   width: 13px;
   height: 13px;
   content: '';
@@ -22,11 +22,15 @@
 
 .insertion-link::before {
   position: absolute;
-  right: 30px;
+  left: calc(100% + 24px);
   width: 2px;
   height: 90%;
   content: '';
   background-color: #f3c766;
+}
+
+.insertion-link:hover::before {
+  width: 50px;
 }
 
 @media (max-width: 648px) {

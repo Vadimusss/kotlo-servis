@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <title>main</title>
+  <meta name="description" content="development page" />
+  <meta name="keywords" content="development" />
+  <script src="main.js"></script>
+  <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<body class="page">
+  <a name="top"></a>
+  <header class="page__page-header page-header">
+    <div class="main-menu-button page-header__main-menu-botton">
+    </div>
+    <a href="/" class="logo page-header__logo"></a>
+    <div class="page-header__slogan">
+      Обслуживание и ремонт<br>отопительных котлов
+    </div>
+    <div class="page-header__contacts">
+      <a class="page-header__contact page-header__contact_type_email" href="mailto:sergei-lan@admin.net">
+        <span class="page-header__contact-accent">info</span>@kotlo-servis.ru<br>
+        <span class="page-header__contact-description">Электронная почта</span>
+      </a>
+      <a class="page-header__contact page-header__contact_type_phone" href="tel:+79232153976">
+        +7 (495) <span class="page-header__contact-accent">108 58 21</span><br>
+        <span class="page-header__contact-description">Москва</span>
+      </a>
+    </div>
+    <nav class="page-header__main-menu">
+      <ul id="menu-main-menu" class="main-menu">
+        <a href="/" class="main-menu__home-link"></a>
+        <li class="main-menu__item main-menu__item_category">
+          <span class="main-menu__link">Услуги</span>
+          <ul class="main-menu__sub-menu">
+            <li class="main-menu__item main-menu__sub-item">
+              <span class="main-menu__link main-menu__sub-link main-menu__link_active">Ремонт котлов</span>
+            </li>
+            <li class="main-menu__item main-menu__sub-item">
+              <a href="http://kotlo-servis.ru/dogovor-vdgo/" class="main-menu__link main-menu__sub-link">Договор
+                ВДГО</a>
+            </li>
+          </ul>
+        </li>
+        <li class="main-menu__item">
+          <a href="http://kotlo-servis.ru/faq/" class="main-menu__link">Вопросы и ответы</a>
+        </li>
+        <li class="main-menu__item">
+          <a href="http://kotlo-servis.ru/sertifikaty/" class="main-menu__link">Сертификаты</a>
+        </li>
+        <li class="main-menu__item">
+          <a href="http://kotlo-servis.ru/ceny/" class="main-menu__link">Наши цены</a>
+        </li>
+        <li class="main-menu__item">
+          <a href="http://kotlo-servis.ru/contacts/" class="main-menu__link">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="page-header__intro">
+      <div class="intro">Наша задача</div>
+    </div>
+    <div class="page-header__header">
+      <h1 class="header__main-header page-header__main-header header">
+        Обслуживание</br>
+        <span class="header__main-header_major page-header__main-header_major">котлов</span>
+      </h1>
+    </div>
+    <div class="page-header__bid">
+      <div class="page-header__bid-insertion insertion">Оставьте заявку на обслуживание газового котла
+        и наш специалист свяжется с вами в ближайшее время!
+      </div>
+      <a href="#request-modal" rel="modal:open" class="button page-header__bid-button">Оставить заявку</a>
+    </div>
+    <div class="page-header__link">
+      <a href="#services" class="insertion-link page-header__insertion-link">Ознакомиться с <br>
+        основными услугами
+        <br>нашей компании</a>
+    </div>
+    <div class="page-header__aside aside">
+      <div class="aside__name">Начало</div>
+      <div class="aside__number">01</div>
+      <a href="tel:+74955555555" class="aside__phone-link"></a>
+      <a href="mailto:info@kotlo-servis.ru" class="aside__email-link"></a>
+    </div>
+  </header>
+  <div class="page__page-header page-header page-header_fixed">
+    <div class="main-menu-button page-header__main-menu-botton page-header__main-menu-botton_fixed">
+    </div>
+    <a href="/" class="logo page-header__logo logo_fixed page-header__logo_fixed"></a>
+    <div class="page-header__contacts page-header__contacts_fixed">
+      <a class="page-header__contact page-header__contact_type_email page-header__contact_fixed"
+        href="mailto:sergei-lan@admin.net">
+        <span class="page-header__contact-accent">info</span>@kotlo-servis.ru<br>
+        <span class="page-header__contact-description page-header__contact-description_fixed">Электронная почта</span>
+      </a>
+      <a class="page-header__contact page-header__contact_type_phone page-header__contact_fixed"
+        href="tel:+79232153976">
+        +7 (495) <span class="page-header__contact-accent">108 58 21</span><br>
+        <span class="page-header__contact-description page-header__contact-description_fixed">Москва</span>
+      </a>
+    </div>
+    <div class="page-header__main-menu page-header__main-menu_fixed">
+      <ul class="main-menu  main-menu_fixed">
+        <a href="/" class="main-menu__home-link main-menu__home-link_fixed"></a>
+        <li class="main-menu__item main-menu__item_category">
+          <span class="main-menu__link">Услуги</span>
+          <ul class="main-menu__sub-menu">
+            <li class="main-menu__item main-menu__sub-item">
+              <span class="main-menu__link main-menu__sub-link main-menu__link_active">Ремонт котлов</span>
+            </li>
+            <li class="main-menu__item main-menu__sub-item">
+              <a href="http://kotlo-servis.ru/dogovor-vdgo/" class="main-menu__link main-menu__sub-link">Договор
+                ВДГО</a>
+            </li>
+          </ul>
+        </li>
+        <li class="main-menu__item">
+          <a href="http://kotlo-servis.ru/faq/" class="main-menu__link">Вопросы и ответы</a>
+        </li>
+        <li class="main-menu__item">
+          <a href="http://kotlo-servis.ru/sertifikaty/" class="main-menu__link">Сертификаты</a>
+        </li>
+        <li class="main-menu__item">
+          <a href="http://kotlo-servis.ru/ceny/" class="main-menu__link">Наши цены</a>
+        </li>
+        <li class="main-menu__item">
+          <a href="http://kotlo-servis.ru/contacts/" class="main-menu__link">Контакты</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <main class="page__main main">
+    <section class="advantages main__section">
+      <div class="intro advantages__intro">Наши преимущества</div>
+      <div class="header__section-header header advantages__header">Почему <span class="header__accent">выбирают
+          нас</span>?</div>
+      <div class="advantages__list">
+        <div class="advantages__item advantages__item_type_experience">
+          <span class="advantages__item-header advantages__item-header_type_experience">Лет</span>
+          <span class="advantages__item-text">Опыта установки, ремонта и обслуживания котлов</span>
+        </div>
+        <div class="advantages__item advantages__item_type_departure">
+          <span class="advantages__item-header">Выезд</span>
+          <span class="advantages__item-text">В день обращения и запись на другой день</span>
+        </div>
+        <div class="advantages__item advantages__item_type_warranty">
+          <span class="advantages__item-header">Гарантия</span>
+          <span class="advantages__item-text">На все работы и запчасти от нас и производителя</span>
+        </div>
+        <div class="advantages__item advantages__item_type_prices">
+          <span class="advantages__item-header">Цены</span>
+          <span class="advantages__item-text">Широкий спектр услуг по доступным ценам</span>
+        </div>
+      </div>
+    </section>
+    <section class="callback-form main__section">
+      <div class="callback-form__wrapper">
+        <div class="callback-form__header header header__section-header">
+          <span class="header__accent">Свяжитесь</span> с нами
+        </div>
+        <div class="callback-form__description">Оставьте заяку и наш специалист свяжется с вами в ближайшее время</div>
+        <div role="form" class="wpcf7" id="wpcf7-f40-o1" lang="ru-RU" dir="ltr">
+          <div class="screen-reader-response">
+            <p role="status" aria-live="polite" aria-atomic="true"></p>
+            <ul></ul>
+          </div>
+          <form action="/#wpcf7-f40-o1" method="post" class="wpcf7-form init callback-form__form"
+            novalidate="novalidate" data-status="init">
+            <div style="display: none;">
+              <input type="hidden" name="_wpcf7" value="40">
+              <input type="hidden" name="_wpcf7_version" value="5.6.3">
+              <input type="hidden" name="_wpcf7_locale" value="ru_RU">
+              <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f40-o1">
+              <input type="hidden" name="_wpcf7_container_post" value="0">
+              <input type="hidden" name="_wpcf7_posted_data_hash" value="">
+            </div>
+            <input type="text" name="text-759" value="" size="40"
+              class="wpcf7-form-control wpcf7-text callback-form__input" aria-invalid="false" placeholder="Имя">
+            <input type="tel" name="tel-547" value="" size="40"
+              class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel callback-form__input"
+              aria-required="true" aria-invalid="false" placeholder="Телефон*">
+            <input type="email" name="email-445" value="" size="40"
+              class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-email callback-form__input"
+              aria-invalid="false" placeholder="E-mail">
+
+            <input type="submit" value="Оставить заявку"
+              class="wpcf7-form-control has-spinner wpcf7-submit button callback-form__button"><span
+              class="wpcf7-spinner"></span>
+            <div class="wpcf7-response-output" aria-hidden="true"></div>
+          </form>
+        </div>
+      </div>
+      <div class="callback-form__bg_gray"></div>
+    </section>
+    <section class="contracts main__section">
+      <a name="contracts"></a>
+      <div class="contracts__aside aside">
+        <div class="aside__name">Тарифы</div>
+        <div class="aside__number">05</div>
+        <a href="tel:+74955555555" class="aside__phone-link"></a>
+        <a href="mailto:info@kotlo-servis.ru" class="aside__email-link"></a>
+      </div>
+      <div class="contracts__intro intro">Предложения</div>
+      <div class="contracts__header header header__section-header">Варианты договора <span
+          class="header__accent">обслуживания</span></div>
+      <a class="contracts__link" href="/">Вопросы?</a>
+      <div class="contracts__cards">
+        <div class="contracts__card">
+          <div class="contracts__card-number">01</div>
+          <div class="contracts__card-header">Эконом</div>
+          <a href="#request-modal" rel="modal:open" class="contracts__card-link">Заказать</a>
+          <div class="contracts__card-description">В эконом договор входит поный пакет документов для Мособлгаз.
+            Сервисное обслуживание и аварианые выезды оплачиваются отдельно. Стоимость работ зафиксированна в договоре.
+          </div>
+          <ul class="contracts__card-list">
+            <li class="contracts__card-list-item">Пакет документов для газовой службы</li>
+            <li class="contracts__card-list-item">При наличии газовой плиты, газового счетчика, сигнализатора
+              загазованности, ГРП они вписываются в договор</li>
+            <li class="contracts__card-list-item">Время прибытия наладчика в случае возникновения аварии до 48 часов
+            </li>
+            <li class="contracts__card-list-item">Сервисное обслуживание оплачиваются согласно договору</li>
+            <li class="contracts__card-list-item">Аварийные выезды оплачиваются согласно договору</li>
+          </ul>
+          <div class="contracts__card-prices">
+            <div class="contracts__card-price">Договор сроком на 1 год: <span class="contracts__card-price-numbers">4
+                000 ₽</span></div>
+            <div class="contracts__card-price">Договор сроком на 3 года: <span class="contracts__card-price-numbers">10
+                000 ₽</span></div>
+          </div>
+        </div>
+        <div class="contracts__card">
+          <div class="contracts__card-number">02</div>
+          <div class="contracts__card-header">Стандарт</div>
+          <a href="#request-modal" rel="modal:open" class="contracts__card-link">Заказать</a>
+          <div class="contracts__card-description">В стандартный договор входит 1 выезд в год для обслуживания
+            настенного котла и пакет документов для Мособлгаз. Аварианые выезды оплачиваются отдельно.</div>
+          <ul class="contracts__card-list">
+            <li class="contracts__card-list-item">Пакет документов для газовой службы</li>
+            <li class="contracts__card-list-item">При наличии газовой плиты, газового счетчика, сигнализатора
+              загазованности, ГРП они вписываются в договор</li>
+            <li class="contracts__card-list-item">Время прибытия наладчика в случае возникновения аварии до 24 часов
+            </li>
+            <li class="contracts__card-list-item">1 плановый выезд для обслуживания котла</li>
+            <li class="contracts__card-list-item">Аварийные выезды оплачиваются согласно договору</li>
+            <li class="contracts__card-list-item">Скидка 10% на запасные части</li>
+          </ul>
+          <div class="contracts__card-prices">
+            <div class="contracts__card-price">Настенный до 36 кВт: <span class="contracts__card-price-numbers">6 500
+                ₽</span></div>
+            <div class="contracts__card-price">Напольный до 100 кВт: <span class="contracts__card-price-numbers">9 000
+                ₽</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="reviews main__section">
+      <div class="reviews__intro intro">Что о нас говорят?</div>
+      <div class="reviews__header header header__section-header">
+        <span class="header__accent">Отзывы</span>
+      </div>
+      <a href="/" class="button reviews__link">Все отзывы</a>
+      <div class="reviews__slider">
+        <div class="owl-carousel">
+          <div class="reviews__slide">
+            <div class="reviews__name">Евгений Иванов 01</div>
+            <div class="reviews__stars">
+              <div class="reviews__star"></div>
+              <div class="reviews__star"></div>
+              <div class="reviews__star"></div>
+              <div class="reviews__star"></div>
+              <div class="reviews__star reviews__star_color_gray"></div>
+            </div>
+            <div class="reviews__date">10 сентября 2021</div>
+            <div class="reviews__text">
+              <p class="reviews__paragraph">01 Отличная организация и очень вежливый и грамотный персонал.</p>
+              <p class="reviews__paragraph">Делал перенос топочной в доме, достаточно сложное мероприятие прошло
+                достаточно быстро и четко. Подсказали по оформлению всех бумаг, новый подвод газа сделали кросиво и
+                качественно. Заодно заменили счетчик, установили с GPRS, теперь достаточно просто заходить в личный
+                кабинет и оплачивать газ раз в месяц.</p>
+            </div>
+          </div>
+          <div class="reviews__slide">
+            <div class="reviews__name">Евгений Иванов 02</div>
+            <div class="reviews__stars">
+              <div class="reviews__star"></div>
+              <div class="reviews__star"></div>
+              <div class="reviews__star"></div>
+              <div class="reviews__star"></div>
+              <div class="reviews__star reviews__star_color_gray"></div>
+            </div>
+            <div class="reviews__date">10 сентября 2021</div>
+            <div class="reviews__text">
+              <p class="reviews__paragraph">02 Отличная организация и очень вежливый и грамотный персонал.</p>
+              <p class="reviews__paragraph">Делал перенос топочной в доме, достаточно сложное мероприятие прошло
+                достаточно быстро и четко. Подсказали по оформлению всех бумаг, новый подвод газа сделали кросиво и
+                качественно. Заодно заменили счетчик, установили с GPRS, теперь достаточно просто заходить в личный
+                кабинет и оплачивать газ раз в месяц.</p>
+            </div>
+          </div>
+          <div class="reviews__slide">
+            <div class="reviews__name">Евгений Иванов 03</div>
+            <div class="reviews__stars">
+              <div class="reviews__star"></div>
+              <div class="reviews__star"></div>
+              <div class="reviews__star"></div>
+              <div class="reviews__star"></div>
+              <div class="reviews__star reviews__star_color_gray"></div>
+            </div>
+            <div class="reviews__date">10 сентября 2021</div>
+            <div class="reviews__text">
+              <p class="reviews__paragraph">03 Отличная организация и очень вежливый и грамотный персонал.</p>
+              <p class="reviews__paragraph">Делал перенос топочной в доме, достаточно сложное мероприятие прошло
+                достаточно быстро и четко. Подсказали по оформлению всех бумаг, новый подвод газа сделали кросиво и
+                качественно. Заодно заменили счетчик, установили с GPRS, теперь достаточно просто заходить в личный
+                кабинет и оплачивать газ раз в месяц.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="documents main__section">
+      <div class="documents__intro intro">Примеры</div>
+      <div class="documents__header header header__section-header">Примеры <span
+          class="header__accent">документов</span></div>
+      <div class="documents__description">При заключении договора на обслуживание газового котла и внутридомового
+        оборудования (ВДГО) предоставляется пакет документов для подачи в местное отделение Мособлгаза. Ниже вы можете
+        ознакомиться со списком докуметов и скачать образцы для ознакомления</div>
+      <div class="documents__list">
+        <div class="documents__sub-header">Список документов</div>
+        <div class="documents__list-item documents__list-item_active">Договор</div>
+        <div class="documents__list-item">Соглашение с Мособлгаз</div>
+        <div class="documents__list-item">Выписка СРО</div>
+        <div class="documents__list-item">Акт разграничения</div>
+        <div class="documents__list-item">Протокол обучения сотрудников</div>
+        <div class="documents__list-item">Сканы удостоверений сотрудников</div>
+      </div>
+      <div class="documents__examples">
+        <div class="documents__sub-header documents__sub-header_type_examples">Примеры документов</div>
+        <div class="documents__example">
+          Договор Эконом
+          <a href="" class="documents__view-link"></a>
+          <a href="" class="documents__download-link"></a>
+        </div>
+        <div class="documents__example">
+          Договор Стандарт
+          <a href="" class="documents__view-link"></a>
+          <a href="" class="documents__download-link"></a>
+        </div>
+        <div class="documents__example">
+          Договор Премиум
+          <a href="" class="documents__view-link"></a>
+          <a href="" class="documents__download-link"></a>
+        </div>
+        <div class="documents__example">
+          Выписка СРО
+          <a href="" class="documents__view-link"></a>
+          <a href="" class="documents__download-link"></a>
+        </div>
+        <div class="documents__example">
+          Акт разграничения
+          <a href="" class="documents__view-link"></a>
+          <a href="" class="documents__download-link"></a>
+        </div>
+        <div class="documents__example">
+          Удостоверения
+          <a href="" class="documents__view-link"></a>
+          <a href="" class="documents__download-link"></a>
+        </div>
+        <div class="documents__example">
+          Соглашение
+          <a href="" class="documents__view-link"></a>
+          <a href="" class="documents__download-link"></a>
+        </div>
+        <div class="documents__example">
+          Протокол обучения
+          <a href="" class="documents__view-link"></a>
+          <a href="" class="documents__download-link"></a>
+        </div>
+      </div>
+    </section>
+    <section class="objects main__section">
+      <div class="objects__header">
+        <div class="objects__intro intro">Результат</div>
+        <div class="header header__section-header">Наши <span class="header__accent">объекты</span></div>
+      </div>
+      <div class="objects__list-wrapper">
+        <div class="objects__sub-header">Населенные пункты</div>
+        <div class="objects__list">
+          <div class="objects__list-item objects__list-item_first-item">Апрелевка</div>
+          <div class="objects__list-item">Балашиха</div>
+          <div class="objects__list-item">Дмитров</div>
+          <div class="objects__list-item">Домодедово</div>
+          <div class="objects__list-item">Звенигород</div>
+          <div class="objects__list-item">Ивантеевка</div>
+          <div class="objects__list-item">Истра</div>
+          <div class="objects__list-item">Королев</div>
+          <div class="objects__list-item">Мытищи</div>
+          <div class="objects__list-item">Наро-Фоминск</div>
+          <div class="objects__list-item">Нахабино</div>
+          <div class="objects__list-item">Ногинск</div>
+          <div class="objects__list-item">Одинцово</div>
+          <div class="objects__list-item">Павловский Посад</div>
+          <div class="objects__list-item">Подольск</div>
+          <div class="objects__list-item">Пушкино</div>
+          <div class="objects__list-item">Раменское</div>
+          <div class="objects__list-item">Солнечногорск</div>
+          <div class="objects__list-item">Троицк</div>
+          <div class="objects__list-item">Химки</div>
+        </div>
+      </div>
+    </section>
+    <section class="cooperation main__section">
+      <div class="cooperation__intro intro">Важное сотрудничество</div>
+      <div class="cooperation__header header header__section-header"><span class="header__accent">Сотрудничаем</span> с
+        Мособлгазом</div>
+      <div class="cooperation__description">
+        <p class="cooperation__paragraph">ГУП МО «Мособлгаз» активно занимается газификацией Подмосковья. Является одной
+          из крупнейших компаний данной
+          области.</p>
+        <p class="cooperation__paragraph">Мособлгаз реализует правительственную программу «Развитие газификации
+          Московской области до 2025 года», по
+          итогам которой будет подключено более 1000 населенных пунктов, где проживает более 290 тысяч человек.</p>
+      </div>
+      <div class="cooperation__partner cooperation__partner_order_first cooperation__partner_odd">
+        <div class="cooperation__name cooperation__name_first-partner"><span
+            class="cooperation__name_hidden-part">Филиал </span>ЮГ</div>
+        <div class="cooperation__address cooperation__address_first-partner">142110, г. Подольск, ул.Кирова, д.31-а
+        </div>
+        <div class="cooperation__phone cooperation__phone_first-partner">+7 (496) <span
+            class="cooperation__accent">769-76-04</span></div>
+        <a href="" class="cooperation__link cooperation__link_first-partner">Скачать / Посмотреть<span
+            class="cooperation__link_hidden-part"> соглашение</span></a>
+      </div>
+      <div class="cooperation__partner cooperation__partner_order_second">
+        <div class="cooperation__name cooperation__name_second-partner"><span
+            class="cooperation__name_hidden-part">Филиал </span>Запад</div>
+        <div class="cooperation__address cooperation__address_second-partner">143000, г. Одинцово, Транспортный пр-д.,
+          д.5</div>
+        <div class="cooperation__phone cooperation__phone_second-partner">+7 (498) <span
+            class="cooperation__accent">690-43-04</span></div>
+        <a href="" class="cooperation__link cooperation__link_second-partner">Скачать / Посмотреть соглашение</a>
+      </div>
+      <div class="cooperation__partner cooperation__partner_odd">
+        <div class="cooperation__name"><span class="cooperation__name_hidden-part">Филиал </span>Восток</div>
+        <div class="cooperation__address">142412, г. Ногинск, ул. Ревсобраний, д.1</div>
+        <div class="cooperation__phone">+7 (496) <span class="cooperation__accent">516-80-04</span></div>
+        <a href="" class="cooperation__link">Скачать / Посмотреть соглашение</a>
+      </div>
+      <div class="cooperation__partner">
+        <div class="cooperation__name"><span class="cooperation__name_hidden-part">Филиал </span>Север</div>
+        <div class="cooperation__address">141002, г. Мытищи, ул. Белобородова, д.6</div>
+        <div class="cooperation__phone">+7 (498) <span class="cooperation__accent">687-47-04</span></div>
+        <a href="" class="cooperation__link">Скачать / Посмотреть соглашение</a>
+      </div>
+      <div class="cooperation__partner cooperation__partner_odd">
+        <div class="cooperation__name"><span class="cooperation__name_hidden-part">Филиал </span>Юго-Восток</div>
+        <div class="cooperation__address">140411 г. Коломна, пр. Кирова, д. 9</div>
+        <div class="cooperation__phone">+7 (496) <span class="cooperation__accent">615-67-04</span></div>
+        <a href="" class="cooperation__link">Скачать / Посмотреть соглашение</a>
+      </div>
+      <div class="cooperation__partner">
+        <div class="cooperation__name"><span class="cooperation__name_hidden-part">Филиал </span>Северо-Запад</div>
+        <div class="cooperation__address">143405, г. Красногорск, ул.Заводская, д.26</div>
+        <div class="cooperation__phone">+7 (498) <span class="cooperation__accent">569-03-04</span></div>
+        <a href="" class="cooperation__link">Скачать / Посмотреть соглашение</a>
+      </div>
+    </section>
+    <section class="brands main__section">
+      <div class="brands__intro intro">Компании</div>
+      <div class="brands__list">
+        <div class="brands__list-item brands__list-item_active" data-tab-path="buderus">Buderus</div>
+        <div class="brands__list-item" data-tab-path="viessmann">Viessmann</div>
+        <div class="brands__list-item" data-tab-path="baxi">Baxi</div>
+        <div class="brands__list-item" data-tab-path="vaillant">Vaillant</div>
+        <div class="brands__list-item" data-tab-path="protherm">Protherm</div>
+        <div class="brands__list-item" data-tab-path="wolf">Wolf</div>
+        <div class="brands__list-item" data-tab-path="hansa">Hansa</div>
+        <div class="brands__list-item" data-tab-path="acv">ACV</div>
+        <div class="brands__list-item" data-tab-path="sime">Sime</div>
+        <div class="brands__list-item" data-tab-path="bosch">Bosch</div>
+        <div class="brands__list-item" data-tab-path="lamborghini">Lamborghini</div>
+        <div class="brands__list-item" data-tab-path="lemax">Lemax</div>
+      </div>
+      <div class="brands__tabs">
+        <div class="brands__tab brands__tab_active" data-tab-target="buderus">
+          <img src="../img/buderus_logo.jpg" alt="Buderus" class="brands__logo">
+          <p class="brands__paragraph">
+            Немецкая компания Buderus производит отопительные котлы, бойлеры косвенного нагрева и другое современное
+            отопительное оборудование самого высокого качества. Компания официально работает в России, имеет широкую
+            сеть авторизованных сервисных центров и магазинов запасных частей.
+          </p>
+        </div>
+        <div class="brands__tab" data-tab-target="viessmann">
+          <img src="../img/viessmann_logo.jpg" alt="Viessmann" class="brands__logo">
+          <p class="brands__paragraph">
+            На сегодняшний день Viessmann Group является одним из крупнейших производителей бытовой и промышленной
+            отопительной техники. В России есть официальное представительство компании, осуществляющее подготовку
+            сервисных специалистов и поставку запчастей к отопительным котлам.
+          </p>
+        </div>
+        <div class="brands__tab" data-tab-target="baxi">
+          <img src="../img/baxi_logo.jpg" alt="Baxi" class="brands__logo">
+          <p class="brands__paragraph">
+            Торговая марка Baxi принадлежит холдингу BDR Thermea и представлена более чем в 70 странах. С 2002 года
+            котлы Baxi официально поставляются в Россию. Благодаря высокому качеству и умеренной цене отопительная
+            техника данного производителя пользуется заслуженной популярностью в нашей стране.
+          </p>
+        </div>
+        <div class="brands__tab" data-tab-target="vaillant">
+          <img src="../img/vaillant_logo.jpg" alt="Vaillant" class="brands__logo">
+          <p class="brands__paragraph">
+            Valliant второй по объемам производитель отопительной техники в Евросоюзе. Многие инженерные решения,
+            которые сегодня кажутся чем-то сама собой разумеющимся, были изобретены специалистами Valliant. Компания
+            давно работает в России, проблем с грамотными наладчиками и запчастями нет.
+          </p>
+        </div>
+        <div class="brands__tab" data-tab-target="protherm">
+          <img src="../img/protherm_logo.jpg" alt="Protherm" class="brands__logo">
+          <p class="brands__paragraph">
+            Производство котлов Protherm находится в Словакии, компания входит в Valliant Group, являясь суббрендом
+            этого холдинга. Основными преимуществами отопительного оборудования данной марки является доступность при
+            высокой надежности. По сочетанию цены и качества прямым конкурентом Протерм является техника Бакси.
+          </p>
+        </div>
+        <div class="brands__tab" data-tab-target="wolf">
+          <img src="../img/wolf_logo.jpg" alt="Wolf" class="brands__logo">
+          <p class="brands__paragraph">
+            Wolf входит в крупный концерн Centrotec SE. Компания производит весь спектр отопительной техники бытового и
+            промышленного класса. Отопительные котлы и баки-водонагреватели для отопления и ГВС данного бренда -
+            высокотехнологичное оборудование превосходного качества. Единственным недостатком является высокая
+            стоимость.
+          </p>
+        </div>
+        <div class="brands__tab" data-tab-target="hansa">
+          <img src="../img/hansa_logo.jpg" alt="Hansa" class="brands__logo">
+          <p class="brands__paragraph">
+            Hansa – немецкий производитель бытовой и отопительной техники, предлагающий комплексные решения по отоплению
+            и горячему водоснабжению загородных домов. Основными компетенциями компании являются: генерация и
+            распределение тепла, автоматизация работы котлов, а так же системы дымоудаления.
+          </p>
+        </div>
+        <div class="brands__tab" data-tab-target="acv">
+          <img src="../img/acv_logo.jpg" alt="ACV" class="brands__logo">
+          <p class="brands__paragraph">
+            Фирма ACV специализируется на производстве оборудования для теплоснабжения. Широкое применение нержавеющих
+            сталей обеспечивает долгий срок службы котлов и горелок ACV. Компания первой вывела на рынок бойлеры
+            косвенного нагрева с компоновкой бак в баке обладающие непревзойденными характеристиками.
+          </p>
+        </div>
+        <div class="brands__tab" data-tab-target="sime">
+          <img src="../img/sime_logo.png" alt="Sime" class="brands__logo">
+          <p class="brands__paragraph">
+            Итальянская компания Sime не так давно вышла на российский рынок, в 2017 году, позже своих основных
+            конкурентов. Российское представительство активно развивает дилерскую сеть в нашей стране и предлагает
+            линейку современных котлов на разных видах топлива, а так же дизельные горелки, выпускаемые под брендом
+            Sime.
+          </p>
+        </div>
+        <div class="brands__tab" data-tab-target="bosch">
+          <img src="../img/bosch_logo.png" alt="Bosch" class="brands__logo">
+          <p class="brands__paragraph">
+            Группа компаний Bosch имеет собственную площадку в городе Энгельс. Завод производит отопительные котлы под
+            марками Bosch и Buderus (входит в группу компаний). Линейки котлов пересекаются лишь от части, под брендом
+            Бош выпускаются котлы, которых нет у Будерус и наоборот.
+          </p>
+        </div>
+        <div class="brands__tab" data-tab-target="lamborghini">
+          <img src="../img/lamborghini_logo.png" alt="Lamborghini" class="brands__logo">
+          <p class="brands__paragraph">
+            Фирма Lamborghini производит не только спорт кары, но и полную линейку оборудования для отопления и ГВС!
+            Компания по праву гордится тем, что вся продукция выпускается на собственном заводе в Италии. В России
+            наибольшее распространение получили дизельные горелки и комбинированные котлы Lamborghini.
+          </p>
+        </div>
+        <div class="brands__tab" data-tab-target="lemax">
+          <img src="../img/lemax_logo.png" alt="Lemax" class="brands__logo">
+          <p class="brands__paragraph">
+            В России то же есть производители современного отопительного оборудования соответствующего современным
+            стандартам. Например, предприятие Lemax. На двух заводах компании изготавливаются качественные панельные
+            радиаторы, проточные баки водонагреватели и отопительные котлы на всех основных типах топлива.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="prices main__section">
+      <div class="prices__aside aside">
+        <div class="aside__name">Прайс</div>
+        <div class="aside__number">06</div>
+        <a href="tel:+74955555555" class="aside__phone-link"></a>
+        <a href="mailto:info@kotlo-servis.ru" class="aside__email-link"></a>
+      </div>
+      <div class="prices__intro intro">Цены</div>
+      <div class="prices__header header header__section-header">
+        <span class="header__accent">Прайс - лист</span>
+      </div>
+      <div class="prices__description">Цены на подключение и ремонт газового оборудования, выполняемый по заявкам, и
+        техническое обслуживание газовых приборов в жилых домах города Москвы.<br> <b>Внимание! Вызов слесаря платный -
+          550 рублей.</b></div>
+      <div class="prices__tables">
+        <div class="drop-down-block">
+          <button class="drop-down-block__button">Цены на ремонт газовой плиты</button>
+          <div class="drop-down-block__content">
+            <table class="price">
+              <tbody>
+                <tr class="price__row price__row_odd">
+                  <td class="price__sell price__sell_type_description">Подключение встроенной техники (верхней панели
+                    или духового шкафа) со
+                    снятием заглушки</td>
+                  <td class="price__sell price__sell_type_measure">Прибор</td>
+                  <td class="price__sell price__sell_type_price">1 750</td>
+                </tr>
+                <tr class="price__row">
+                  <td class="price__sell price__sell_type_description">Закрепление варочной панели</td>
+                  <td class="price__sell price__sell_type_measure">Варочная панель</td>
+                  <td class="price__sell price__sell_type_price">670</td>
+                </tr>
+                <tr class="price__row price__row_odd">
+                  <td class="price__sell price__sell_type_description">Демонтаж духового шкафа при замене гибкой
+                    подводки встроенной техники</td>
+                  <td class="price__sell price__sell_type_measure">Духовой шкаф</td>
+                  <td class="price__sell price__sell_type_price">550</td>
+                </tr>
+                <tr class="price__row">
+                  <td class="price__sell price__sell_type_description">Демонтаж встроенной техники (газовой варочной
+                    панели или духового шкафа) с
+                    установкой заглушки</td>
+                  <td class="price__sell price__sell_type_measure">Прибор</td>
+                  <td class="price__sell price__sell_type_price">750</td>
+                </tr>
+                <tr class="price__row price__row_odd">
+                  <td class="price__sell price__sell_type_description">Замена встроенной техники (верхней панели или
+                    духового шкафа)</td>
+                  <td class="price__sell price__sell_type_measure">Прибор</td>
+                  <td class="price__sell price__sell_type_price">2 100</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="drop-down-block">
+          <button class="drop-down-block__button">Цены на работу со встроенной
+            техникой</button>
+          <div class="drop-down-block__content">
+            <table class="price">
+              <tbody>
+                <tr class="price__row price__row_odd">
+                  <td class="price__sell price__sell_type_description">Подключение встроенной техники (верхней панели
+                    или духового шкафа) со
+                    снятием заглушки</td>
+                  <td class="price__sell price__sell_type_measure">Прибор</td>
+                  <td class="price__sell price__sell_type_price">1 750</td>
+                </tr>
+                <tr class="price__row">
+                  <td class="price__sell price__sell_type_description">Закрепление варочной панели</td>
+                  <td class="price__sell price__sell_type_measure">Варочная панель</td>
+                  <td class="price__sell price__sell_type_price">670</td>
+                </tr>
+                <tr class="price__row price__row_odd">
+                  <td class="price__sell price__sell_type_description">Демонтаж духового шкафа при замене гибкой
+                    подводки встроенной техники</td>
+                  <td class="price__sell price__sell_type_measure">Духовой шкаф</td>
+                  <td class="price__sell price__sell_type_price">550</td>
+                </tr>
+                <tr class="price__row">
+                  <td class="price__sell price__sell_type_description">Демонтаж встроенной техники (газовой варочной
+                    панели или духового шкафа) с
+                    установкой заглушки</td>
+                  <td class="price__sell price__sell_type_measure">Прибор</td>
+                  <td class="price__sell price__sell_type_price">750</td>
+                </tr>
+                <tr class="price__row price__row_odd">
+                  <td class="price__sell price__sell_type_description">Замена встроенной техники (верхней панели или
+                    духового шкафа)</td>
+                  <td class="price__sell price__sell_type_measure">Прибор</td>
+                  <td class="price__sell price__sell_type_price">2 100</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="text-content main__section">
+      <div class="text-content__intro intro">Если авария?</div>
+      <div class="text-content__header header header__section-header">Условия <span
+          class="header__accent">аварийных</span> выездов</div>
+      <div class="text-content__content">
+        <div class="text-content__image-wrapper text-content__image-wrapper_side_right">
+          <img src="../img/text-content__illustration_01.jpg" alt=""
+            class="text-content__image text-content__image_side_right">
+        </div>
+        <div class="text-content__content-wrapper_side_left">
+          <p class="text-content__paragraph text-content__description">В целях обеспечения исправного и работоспособного
+            газового оборудования
+            Постановлением Правительства РФ № 410 от 14 мая 2013 года установлен минимальный перечень работ, выполняемых
+            при техническом обслуживании внутридомового и (или) внутриквартирного оборудования:</p>
+          <ul class="text-content__list">
+            <li class="text-content__list-item">Визуальная проверка целосности и соответствия нормативным требованиям
+              (осмотр) внутридомового и (или) внутриквартирного газового оборудования.</li>
+            <li class="text-content__list-item">Визуальная проверка наличия свободного доступа (осмотр) к внутридомовому
+              и
+              (или) внутриквартирному газовуму оборудованию.</li>
+            <li class="text-content__list-item">Визуальная проверка состояния окраски и креплений газопровода (осмотр).
+            </li>
+            <li class="text-content__list-item">Визуальная проверка наличия и целосности футляров в местах прокладки
+              через
+              наружные и внутренние конструкции многоквартирных домов и домовладений (осмотр).</li>
+            <li class="text-content__list-item">Проверка герметичности соединений и отключающих устройств (приборный
+              метод, обмыливание).</li>
+          </ul>
+        </div>
+      </div>
+      <div class="text-content__content">
+        <div class="text-content__image-wrapper text-content__image-wrapper_side_left">
+          <img src="../img/text-content__illustration_02.jpg" alt=""
+            class="text-content__image text-content__image_side_left">
+        </div>
+        <div class="text-content__content-wrapper_side_right">
+          <div class="text-content__insertion insertion">
+            <p class="text-content__paragraph">
+              Вы, как собственник газового оборудования, вправе хотя бы визуально
+              проверить качество работ (услуг), выполненных обслуживающей организацией при проверке газового
+              оборудования.
+            </p>
+            <p class="text-content__paragraph">При этом Вы можете:</p>
+          </div>
+          <ul class="text-content__list">
+            <li class="text-content__list-item">Подписать акт приемки выполненных работ безоговорочно;</li>
+            <li class="text-content__list-item">Подписать акт,но указав свои замечания по выполненным работам;</li>
+          </ul>
+          <p class="text-content__paragraph"><b>Не подписывать акт приемки, если:</b></p>
+          <ul class="text-content__list">
+            <li class="text-content__list-item">
+              работы не выполненны, в том числе:
+              <ul class="text-content__sub-list">
+                <li class="text-content__sub-list-item">отдельные виды работ при обслуживании ВДГО и ВКГО, которые
+                  выполнены не полностью;</li>
+                <li class="text-content__sub-list-item">не получен устный инструктаж по правилам пользования газом;</li>
+                <li class="text-content__sub-list-item">не получена на руки инструкция по безопасному использованию газа
+                  при удовлетворении комунально-бытовых нужд.</li>
+              </ul>
+            </li>
+          </ul>
+          <div class="text-content__addition">Ремонт бытового газового оборудования производится обслуживающей
+            организацией на основании ремонтной заявки за отдельную плату.</div>
+        </div>
+      </div>
+    </section>
+    <section class="contacts main__section">
+      <div class="contacts__intro intro">Контактная информация</div>
+      <div class="contacts__header header header__section-header">
+        <span class="header__accent">Контакты</span>
+      </div>
+      <ul class="contacts__list">
+        <li class="contacts__contact contacts__contact_type_address">Адрес: "Экспострой", Нахимовский проспект, д. 24,
+          стр.9, оф.407А</li>
+        <li class="contacts__contact contacts__contact_type_phone">Телефон: 8 (495) 792-42-86</li>
+        <li class="contacts__contact contacts__contact_type_e-mail">E-mail: info@stroyks.com</li>
+      </ul>
+      <div class="contacts__map" id="contacts__map">
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="page__footer footer">
+    <a href="#top" class="footer__link"></a>
+    <a href="/" class="logo footer__logo"></a>
+    <div class="footer__slogan">Обслуживание и ремонт<br>отопительных котлов</div>
+    <div class="footer__copyright">2022 Все права защищены</div>
+    <ul class="footer__menu">
+      <li><a class="footer__menu-link" href="/">Вопросы и ответы</a></li>
+      <li><a class="footer__menu-link" href="/">Сертификаты</a></li>
+      <li><a class="footer__menu-link" href="/">Цены</a></li>
+      <li><a class="footer__menu-link" href="/">Контакты</a></li>
+    </ul>
+    <div class="footer__requisites">
+      <a href="tel:+79232153976" class="footer__requisite footer__requisite_type_phone">
+        +7 (923) <span class="footer__requisites-accent">215 39 76</span>
+      </a>
+      <a href="mailto:sergei-lan@admin.net" class="footer__requisite footer__requisite_type_e-mail">
+        <span class="footer__requisites-accent">sergei-lan</span>@admin.net
+      </a>
+    </div>
+  </footer>
+  <div class="modal request-modal" id="request-modal">
+    <div class="">Заявка на обратный звонок</div>
+  </div>
+</body>
+
+</html>

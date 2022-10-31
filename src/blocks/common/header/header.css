@@ -12,8 +12,23 @@
   font-family: 'DIN Pro Condensed', Arial, Helvetica, sans-serif;
   font-weight: 300;
   margin-left: -4px;
+  font-size: 45px;
+  text-transform: uppercase;
 }
 
 .header__accent {
   font-weight: 600;
+}
+
+@media (max-width: 1110px) {
+  .header__section-header {
+    margin-left: -2px;
+  }
+}
+
+@media (max-width: 648px) {
+  .header__section-header {
+    font-size: 30px;
+    margin-left: 0;
+  }
 }

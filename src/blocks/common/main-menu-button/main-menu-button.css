@@ -1,41 +1,22 @@
-.main-menu-button {
-  display: none;
-}
-
 @media (max-width: 1110px) {
   .main-menu-button {
-    position: relative;
-    display: flex;
-    row-gap: 6px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 60px;
-  }
-
-  .main-menu-button::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 1px;
-    height: 38px;
-    content: '';
-    background-color: #c8c8c8;
-  }
-
-  .main-menu-button__line {
-    flex: 0 0 6px;
+    display: block;
+    height: 37px;
     width: 37px;
-    border-radius: 3px;
-    background-color: #000000;
+    background-image: url('main-menu-button__icon_open.png');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .main-menu-button_close {
+    background-image: url('main-menu-button__icon_close.png');
+    z-index: 4000;
   }
 }
 
 @media (max-width: 648px) {
-  .main-menu-button::before {
-    display: none;
-  }
-  .main-menu-button__line {
-    background-color: #ffffff;
+  .main-menu-button_close {
+    top: 5px;
+    left: calc(170px + ((100vw - 360px) / 2));
   }
 }

@@ -8,11 +8,10 @@ const setMapCenter = (map) => {
   } else if (width > 1110) {
     map.setCenter([55.8138, 37.4930]);
   } else if (width > 870) {
+    map.setCenter([55.8138, 37.4910]);
+  } else {
     map.setCenter([55.8138, 37.4900]);
-  } else if (count > 648) {
-    map.setCenter([55.8138, 37.4080]);
   }
-  console.log('Map centred');
 };
 
 const init = () => {
@@ -52,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
           const map = init();
           window.addEventListener('resize', debounce(() => {
             setMapCenter(map);
-          }, 100));
+          }, 300));
         });
       }, 500);
 

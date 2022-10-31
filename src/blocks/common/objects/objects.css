@@ -6,6 +6,7 @@
   background-image: url('objects__bg.jpg');
   background-repeat: no-repeat;
   background-position-y: 39px;
+  background-position-x: calc(-249px - (0 + -249) * ((100vw - 1435px) / (1920 - 1435)));;
   overflow: hidden;
 }
 
@@ -78,7 +79,7 @@
   .objects {
     grid-template-columns: 1fr 294px 250px 456px 1fr;
     background-size: auto 659px;
-    background-position-x: -291px;
+    background-position-x: calc(-440px - (-440 - -291) * ((100vw - 1111px) / (1435 - 1111)));
   }
 
   .objects__header {
@@ -91,7 +92,7 @@
     grid-template-columns: 1fr 258px 118px 392px 1fr;
     grid-template-rows: 106px 179px 348px;
     background-size: auto 595px;
-    background-position-x: -382px;
+    background-position-x: calc(-492px - (-492 - -382) * ((100vw - 871px) / (1110 - 871)));
   }
 
   .objects__header {
@@ -113,7 +114,7 @@
     grid-template-columns: 1fr 258px 34px 348px 1fr;
     grid-template-rows: 106px 170px 360px;
     background-size: auto 597px;
-    background-position-x: -545px;
+    background-position-x: calc(-655px - (-655 - -545) * ((100vw - 649px) / (870 - 649)));
   }
 
   .objects__header {

@@ -17,13 +17,14 @@
 .reviews__link {
   top: -10px;
   right: -3px;
+  display: flex;
   grid-column: 3 / 4;
   grid-row: 2 / 3;
+  justify-content: center;
+  align-items: center;
   width: 246px;
   height: 60px;
-  text-align: center;
   text-decoration: none;
-  line-height: 54px;
 }
 
 .reviews__slider {
@@ -52,9 +53,9 @@
   top: 100px;
   width: 39px;
   height: 39px;
+  cursor: pointer;
   border: none;
   background-color: #efefef;
-  cursor: pointer;
 }
 
 .reviews__slider-button:hover {
@@ -269,10 +270,10 @@
   .reviews__link {
     top: initial;
     right: initial;
+    align-self: end;
     grid-column: 2 / 3;
     grid-row: 3 / 4;
     justify-self: center;
-    align-self: end;
   }
 
   .reviews__slider {

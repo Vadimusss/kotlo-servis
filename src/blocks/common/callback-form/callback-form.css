@@ -23,7 +23,7 @@
   background-position-x: right;
 }
 
-.callback-form__wrapper::before {
+.callback-form__link {
   position: absolute;
   top: -37px;
   right: 0;
@@ -158,7 +158,7 @@
     background-size: 264px 48px;
   }
 
-  .callback-form__wrapper::before {
+  .callback-form__link {
     top: -32px;
     right: 2px;
   }
@@ -197,7 +197,7 @@
     text-align: center;
   }
 
-  .callback-form__wrapper::before {
+  .callback-form__link {
     top: -40px;
     right: 149px;
   }

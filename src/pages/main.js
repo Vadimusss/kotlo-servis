@@ -14,3 +14,4 @@ import '../img/vaillant_logo.jpg';
 import '../img/viessmann_logo.jpg';
 import '../img/wolf_logo.jpg';
 import '../img/hansa_logo.jpg';
+import '../img/contacts__office-icon.png';

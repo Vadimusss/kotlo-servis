@@ -17,25 +17,40 @@
   <header class="page__page-header page-header">
     <div class="main-menu-button page-header__main-menu-botton">
     </div>
-    <a href="/" class="logo page-header__logo"></a>
+    <a class="messenger-button page-header__messenger-button" href="https://wa.me/79857730006"></a> 
+    <a href="/" class="logo logo_in-header page-header__logo"></a>
     <div class="page-header__slogan">
       Обслуживание и ремонт<br>отопительных котлов
     </div>
     <div class="page-header__contacts">
-      <a class="page-header__contact page-header__contact_type_email" href="mailto:sergei-lan@admin.net">
+      <a class="page-header__contact page-header__contact_type_email page-header__email" href="mailto:sergei-lan@admin.net">
         <span class="page-header__contact-accent">info</span>@kotlo-servis.ru<br>
         <span class="page-header__contact-description">Электронная почта</span>
       </a>
-      <a class="page-header__contact page-header__contact_type_phone" href="tel:+79232153976">
-        +7 (495) <span class="page-header__contact-accent">108 58 21</span><br>
+      <a class="page-header__contact page-header__contact_type_link page-header__whatsapp-link" href="https://wa.me/79857730006"></a>
+      <a class="page-header__contact page-header__contact_type_phone page-header__phone" href="tel:+74957730006">
+        +7 (495) <span class="page-header__contact-accent">773 00 06</span><br>
         <span class="page-header__contact-description">Москва</span>
       </a>
     </div>
+
     <nav class="page-header__main-menu">
       <ul id="menu-main-menu" class="main-menu">
         <a href="/" class="main-menu__home-link"></a>
         <li class="main-menu__item main-menu__item_category">
           <span class="main-menu__link">Услуги</span>
+          <ul class="main-menu__sub-menu">
+            <li class="main-menu__item main-menu__sub-item">
+              <span class="main-menu__link main-menu__sub-link main-menu__link_active">Ремонт котлов</span>
+            </li>
+            <li class="main-menu__item main-menu__sub-item">
+              <a href="http://kotlo-servis.ru/dogovor-vdgo/" class="main-menu__link main-menu__sub-link">Договор
+                ВДГО</a>
+            </li>
+          </ul>
+        </li>
+        <li class="main-menu__item main-menu__item_category">
+          <span class="main-menu__link">Ремонт</span>
           <ul class="main-menu__sub-menu">
             <li class="main-menu__item main-menu__sub-item">
               <span class="main-menu__link main-menu__sub-link main-menu__link_active">Ремонт котлов</span>
@@ -60,14 +75,19 @@
         </li>
       </ul>
     </nav>
+
     <div class="page-header__intro">
       <div class="intro">Наша задача</div>
     </div>
     <div class="page-header__header">
-      <h1 class="header__main-header page-header__main-header header">
-        Обслуживание</br>
-        <span class="header__main-header_major page-header__main-header_major">котлов</span>
-      </h1>
+      <span class="header__main-header page-header__main-header header">
+        Обслуживание и ремонт котлов</br>
+        <span class="header__main-header_major page-header__main-header_major">Baxi</span>
+      </span>
+    </div>
+    <div class="page-header__promo">
+      <a href="#services" class="insertion-link insertion-link_highlighted page-header__promo-link">Договор ВДГО от 4000
+        руб!</a>
     </div>
     <div class="page-header__bid">
       <div class="page-header__bid-insertion insertion">Оставьте заявку на обслуживание газового котла
@@ -87,50 +107,45 @@
       <a href="mailto:info@kotlo-servis.ru" class="aside__email-link"></a>
     </div>
   </header>
-  <div class="page__page-header page-header page-header_fixed">
-    <div class="main-menu-button page-header__main-menu-botton page-header__main-menu-botton_fixed">
+
+  <div class="fixed-nav-bar">
+    <div class="main-menu-button fixed-nav-bar__menu-botton">
     </div>
-    <a href="/" class="logo page-header__logo logo_fixed page-header__logo_fixed"></a>
-    <div class="page-header__contacts page-header__contacts_fixed">
-      <a class="page-header__contact page-header__contact_type_email page-header__contact_fixed"
-        href="mailto:sergei-lan@admin.net">
-        <span class="page-header__contact-accent">info</span>@kotlo-servis.ru<br>
-        <span class="page-header__contact-description page-header__contact-description_fixed">Электронная почта</span>
+
+    <a href="/" class="logo fixed-nav-bar__logo"></a>
+
+    <ul class="main-menu fixed-nav-bar__menu">
+      <a href="/" class="main-menu__home-link fixed-nav-bar__home-link"></a>
+      <li class="main-menu__item_category fixed-nav-bar__menu-item_category">
+        <span class="main-menu__link">Обслуживание</span>
+        <ul class="main-menu__sub-menu">
+          <li><span class="main-menu__link main-menu__link_active">Обслуживание котлов</span></li>
+          <li><a href="https://kotlo-servis.ru/dogovor-vdgo/" class="main-menu__link">Договор ВДГО</a></li>
+          <li><a href="https://kotlo-servis.ru/dogovor-obsluzhivanie-kotla/" class="main-menu__link">Договор
+              обслуживания котла</a></li>
+        </ul>
+      </li>
+      <li><a href="https://kotlo-servis.ru/remont-kotlov/" class="main-menu__link">Ремонт котлов</a></li>
+      <li class="main-menu__item_category fixed-nav-bar__menu-item_category">
+        <span class="main-menu__link">Промывка</span>
+        <ul class="main-menu__sub-menu">
+          <li><a href="https://kotlo-servis.ru/promyvka-sistemy-otopleniya-cena/" class="main-menu__link">Промывка
+              системы отопления</a></li>
+        </ul>
+      </li>
+      <li><a href="https://kotlo-servis.ru/ceny/" class="main-menu__link">Наши цены</a></li>
+      <li><a href="https://kotlo-servis.ru/contacts/" class="main-menu__link">Контакты</a></li>
+    </ul>
+
+    <div class="fixed-nav-bar__contacts">
+      <a class="fixed-nav-bar__contact fixed-nav-bar__contact_type_email" href="mailto:info@kotlo-servis.ru">
+        <span class="fixed-nav-bar__contact-accent">info</span>@kotlo-servis.ru<br>
+        <span class="fixed-nav-bar__contact-description">Электронная почта</span>
       </a>
-      <a class="page-header__contact page-header__contact_type_phone page-header__contact_fixed"
-        href="tel:+79232153976">
-        +7 (495) <span class="page-header__contact-accent">108 58 21</span><br>
-        <span class="page-header__contact-description page-header__contact-description_fixed">Москва</span>
+      <a class="fixed-nav-bar__contact fixed-nav-bar__contact_type_phone" href="tel:+74957730006">
+        +7 (495) <span class="fixed-nav-bar__contact-accent">773 00 06</span><br>
+        <span class="fixed-nav-bar__contact-description">Москва</span>
       </a>
-    </div>
-    <div class="page-header__main-menu page-header__main-menu_fixed">
-      <ul class="main-menu  main-menu_fixed">
-        <a href="/" class="main-menu__home-link main-menu__home-link_fixed"></a>
-        <li class="main-menu__item main-menu__item_category">
-          <span class="main-menu__link">Услуги</span>
-          <ul class="main-menu__sub-menu">
-            <li class="main-menu__item main-menu__sub-item">
-              <span class="main-menu__link main-menu__sub-link main-menu__link_active">Ремонт котлов</span>
-            </li>
-            <li class="main-menu__item main-menu__sub-item">
-              <a href="http://kotlo-servis.ru/dogovor-vdgo/" class="main-menu__link main-menu__sub-link">Договор
-                ВДГО</a>
-            </li>
-          </ul>
-        </li>
-        <li class="main-menu__item">
-          <a href="http://kotlo-servis.ru/faq/" class="main-menu__link">Вопросы и ответы</a>
-        </li>
-        <li class="main-menu__item">
-          <a href="http://kotlo-servis.ru/sertifikaty/" class="main-menu__link">Сертификаты</a>
-        </li>
-        <li class="main-menu__item">
-          <a href="http://kotlo-servis.ru/ceny/" class="main-menu__link">Наши цены</a>
-        </li>
-        <li class="main-menu__item">
-          <a href="http://kotlo-servis.ru/contacts/" class="main-menu__link">Контакты</a>
-        </li>
-      </ul>
     </div>
   </div>
 
@@ -384,15 +399,30 @@
         </div>
       </div>
     </section>
-    <section class="objects main__section">
+    <section class="objects main__objects">
+      <div class="objects__overlay objects__overlay_left"></div>
+      <div class="objects__overlay objects__overlay_right"></div>
       <div class="objects__header">
         <div class="objects__intro intro">Результат</div>
-        <div class="header header__section-header">Наши <span class="header__accent">объекты</span></div>
+        <div class="header header__section-header">Мы <span class="header__accent">обслуживаем</span></div>
+      </div>
+      <div class="objects__description">
+        <p class="objects__paragraph">
+          У нашей компании заключены соглашения об аварийно-диспетчерском обеспечении внутридомового и внутриквартирного
+          газоиспользующего оборудования (АДО ВДГО/ВКГО) со всеми филиалами АО "Мособлгаз", а так же с ООО "Газпром
+          межрегионгаз", что позволяет нам заключать договоры на обслуживание газовых котлов по всей Московской области,
+          а так же в границах г. Москва.
+        </p>
+        <p class="objects__paragraph">На карте отмечены населенные пункты, жители которых выбрали нас в качестве
+          обслуживающей организации. Присоеденяйтесь!</p>
+      </div>
+      <div class="objects__map" id="objects__map">
+
       </div>
       <div class="objects__list-wrapper">
         <div class="objects__sub-header">Населенные пункты</div>
         <div class="objects__list">
-          <div class="objects__list-item objects__list-item_first-item">Апрелевка</div>
+          <div class="objects__list-item">Апрелевка</div>
           <div class="objects__list-item">Балашиха</div>
           <div class="objects__list-item">Дмитров</div>
           <div class="objects__list-item">Домодедово</div>
@@ -420,55 +450,53 @@
       <div class="cooperation__header header header__section-header"><span class="header__accent">Сотрудничаем</span> с
         Мособлгазом</div>
       <div class="cooperation__description">
-        <p class="cooperation__paragraph">ГУП МО «Мособлгаз» активно занимается газификацией Подмосковья. Является одной
-          из крупнейших компаний данной
-          области.</p>
-        <p class="cooperation__paragraph">Мособлгаз реализует правительственную программу «Развитие газификации
-          Московской области до 2025 года», по
-          итогам которой будет подключено более 1000 населенных пунктов, где проживает более 290 тысяч человек.</p>
+        <p class="cooperation__paragraph">Наша компания является официальным партнером АО «Мособлгаз» и ООО «Газпром
+          межрегионгаз Москва».</p>
+        <p class="cooperation__paragraph">Нами заключены соглашения на техническое обслуживание и аварийно-диспетчерское
+          обеспечение внутридомового газового оборудования (ТО и АДО ВДГО) со всеми филиалами поставщиков газа что
+          позволяет нам обслуживать
+          котлы и заключать договора ВДГО на всей территории Москвы и Московской области.</p>
       </div>
       <div class="cooperation__partner cooperation__partner_order_first cooperation__partner_odd">
-        <div class="cooperation__name cooperation__name_first-partner"><span
-            class="cooperation__name_hidden-part">Филиал </span>ЮГ</div>
-        <div class="cooperation__address cooperation__address_first-partner">142110, г. Подольск, ул.Кирова, д.31-а
+        <div class="cooperation__name cooperation__name_first-partner">АО «Мособлгаз»<br> ЮГ</div>
+        <div class="cooperation__address cooperation__address_first-partner">142110, г. Подольск, ул. Кирова, д.31-а
         </div>
         <div class="cooperation__phone cooperation__phone_first-partner">+7 (496) <span
             class="cooperation__accent">769-76-04</span></div>
-        <a href="" class="cooperation__link cooperation__link_first-partner">Скачать / Посмотреть<span
-            class="cooperation__link_hidden-part"> соглашение</span></a>
+        <!-- <a href="" class="cooperation__link cooperation__link_first-partner">Скачать / Посмотреть<span
+            class="cooperation__link_hidden-part"> соглашение</span></a> -->
       </div>
       <div class="cooperation__partner cooperation__partner_order_second">
-        <div class="cooperation__name cooperation__name_second-partner"><span
-            class="cooperation__name_hidden-part">Филиал </span>Запад</div>
+        <div class="cooperation__name cooperation__name_second-partner">АО «Мособлгаз»<br> Запад</div>
         <div class="cooperation__address cooperation__address_second-partner">143000, г. Одинцово, Транспортный пр-д.,
           д.5</div>
         <div class="cooperation__phone cooperation__phone_second-partner">+7 (498) <span
             class="cooperation__accent">690-43-04</span></div>
-        <a href="" class="cooperation__link cooperation__link_second-partner">Скачать / Посмотреть соглашение</a>
+        <!-- <a href="" class="cooperation__link cooperation__link_second-partner">Скачать / Посмотреть соглашение</a> -->
       </div>
       <div class="cooperation__partner cooperation__partner_odd">
-        <div class="cooperation__name"><span class="cooperation__name_hidden-part">Филиал </span>Восток</div>
+        <div class="cooperation__name">АО «Мособлгаз»<br> Восток</div>
         <div class="cooperation__address">142412, г. Ногинск, ул. Ревсобраний, д.1</div>
         <div class="cooperation__phone">+7 (496) <span class="cooperation__accent">516-80-04</span></div>
-        <a href="" class="cooperation__link">Скачать / Посмотреть соглашение</a>
+        <!-- <a href="" class="cooperation__link">Скачать / Посмотреть соглашение</a> -->
       </div>
       <div class="cooperation__partner">
-        <div class="cooperation__name"><span class="cooperation__name_hidden-part">Филиал </span>Север</div>
+        <div class="cooperation__name">АО «Мособлгаз»<br> Север</div>
         <div class="cooperation__address">141002, г. Мытищи, ул. Белобородова, д.6</div>
         <div class="cooperation__phone">+7 (498) <span class="cooperation__accent">687-47-04</span></div>
-        <a href="" class="cooperation__link">Скачать / Посмотреть соглашение</a>
+        <!-- <a href="" class="cooperation__link">Скачать / Посмотреть соглашение</a> -->
       </div>
       <div class="cooperation__partner cooperation__partner_odd">
-        <div class="cooperation__name"><span class="cooperation__name_hidden-part">Филиал </span>Юго-Восток</div>
+        <div class="cooperation__name">АО «Мособлгаз»<br> Юго-Восток</div>
         <div class="cooperation__address">140411 г. Коломна, пр. Кирова, д. 9</div>
         <div class="cooperation__phone">+7 (496) <span class="cooperation__accent">615-67-04</span></div>
-        <a href="" class="cooperation__link">Скачать / Посмотреть соглашение</a>
+        <!-- <a href="" class="cooperation__link">Скачать / Посмотреть соглашение</a> -->
       </div>
       <div class="cooperation__partner">
-        <div class="cooperation__name"><span class="cooperation__name_hidden-part">Филиал </span>Северо-Запад</div>
-        <div class="cooperation__address">143405, г. Красногорск, ул.Заводская, д.26</div>
+        <div class="cooperation__name">АО «Мособлгаз»<br> Северо-Запад</div>
+        <div class="cooperation__address">143405, г. Красногорск, ул. Заводская, д.26</div>
         <div class="cooperation__phone">+7 (498) <span class="cooperation__accent">569-03-04</span></div>
-        <a href="" class="cooperation__link">Скачать / Посмотреть соглашение</a>
+        <!--  <a href="" class="cooperation__link">Скачать / Посмотреть соглашение</a> -->
       </div>
     </section>
     <section class="brands main__section">

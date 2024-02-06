@@ -6,19 +6,16 @@
   background-repeat: no-repeat;
 }
 
-.logo_fixed {
-  background-image: url('logo__bg_static.png');
-  width: 30px;
-  height: 47px;
-}
-
 @media (max-width: 870px) {
   .logo {
     width: 135px;
   }
+}
 
-  .logo_fixed {
+@media (max-width: 389px) {
+  .logo_in-header {
     width: 30px;
-    height: 47px;
+    margin: 10px 0 0 3px;
+    background-image: url('logo__bg_static.png');
   }
 }

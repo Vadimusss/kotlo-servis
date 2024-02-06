@@ -11,12 +11,25 @@
   .main-menu-button_close {
     background-image: url('main-menu-button__icon_close.png');
     z-index: 4000;
+    top: 10px;
+    left: calc(10px + ((100vw - 768px) / 2));
+  }
+}
+
+@media (max-width: 870px) {
+  .main-menu-button_close {
+    left: calc(10px + ((100vw - 640px) / 2));
   }
 }
 
 @media (max-width: 648px) {
   .main-menu-button_close {
-    top: 5px;
-    left: calc(170px + ((100vw - 360px) / 2));
+    left: calc(10px + ((100vw - 360px) / 2));
+  }
+}
+
+@media (max-width: 359px) {
+  .main-menu-button_close {
+    left: calc(10px + ((100vw - 320px) / 2));
   }
 }

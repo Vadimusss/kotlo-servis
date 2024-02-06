@@ -6,6 +6,10 @@
   margin-bottom: 60px;
 }
 
+.main__objects {
+  padding-bottom: 80px;
+}
+
 @media (max-width: 1435px) {
   .main {
     padding-top: 0;

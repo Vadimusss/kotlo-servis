@@ -1,0 +1,9 @@
+.messenger-button {
+  display: block;
+  width: 37px;
+  height: 37px;
+  background-image: url('messenger-button__icon.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}

@@ -298,6 +298,10 @@
     height: 68px;
   }
 
+  .contracts__card-header::before {
+    width: 400px;
+  }
+
   .contracts__card-price-numbers {
     flex-basis: 90px;
     font-size: 30px;
@@ -416,7 +420,7 @@
 
   .contracts__link::before {
     top: -10px;
-    right: 154px;
+    right: calc(50% - 30.1px);
   }
 
   .contracts__card {
@@ -428,7 +432,7 @@
   }
 
   .contracts__card-number {
-    left: 143px;
+    left: calc(50% - 31px);
   }
 
   .contracts__card-header::before {
@@ -478,5 +482,25 @@
   .contracts__card-price-numbers {
     flex-basis: auto;
     font-size: 30px;
+  }
+}
+
+@media (max-width: 359px) {
+  .contracts {
+    grid-template-columns: 1fr 320px 1fr;
+    grid-template-rows: 106px 122px min-content;
+  }
+
+  .contracts__link {
+    font-size: 80px;
+    justify-self: center;
+  }
+
+  .contracts__card {
+    padding: 46px 16px 0 26px;
+  }
+
+  .contracts__card-link::after {
+    right: 10px;
   }
 }

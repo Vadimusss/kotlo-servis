@@ -137,3 +137,9 @@
     background-image: url('contacts__map_sub_649px.jpg');
   }
 }
+
+@media (max-width: 359px) {
+  .contacts {
+    grid-template-columns: 1fr 320px 1fr;
+  }
+}

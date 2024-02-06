@@ -20,17 +20,14 @@ const init = () => {
     zoom: 15,
   });
 
-  const myPlacemark = new ymaps.Placemark(
-    [55.8138, 37.4909],
-    {
-      iconContent: 'ООО "ГАЗСЕРВИС"',
-    },
-    {
-      preset: 'islands#blackStretchyIcon',
-    },
-  );
+  const officePlacemark = new ymaps.Placemark([55.813876, 37.490827], {}, {
+    iconLayout: 'default#image',
+    iconImageHref: 'https://kotlo-servis.ru/wp-content/themes/kotlo-servis/img/contacts__office-icon.png',
+    iconImageSize: [50, 70],
+    iconImageOffset: [-20, -68],
+  });
 
-  myMap.geoObjects.add(myPlacemark);
+  myMap.geoObjects.add(officePlacemark);
   setMapCenter(myMap);
   return myMap;
 };
@@ -42,9 +39,11 @@ document.addEventListener('DOMContentLoaded', () => {
   function startLazyMap() {
     if (!mapLoaded) {
       mapLoaded = true;
-      const ymapApiScript = document.createElement('script');
-      ymapApiScript.setAttribute('src', 'https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=a072abfb-f727-4a13-97a7-61fc775866d0');
-      mapContainer.appendChild(ymapApiScript);
+      if (typeof ymaps === 'undefined') {
+        const ymapApiScript = document.createElement('script');
+        ymapApiScript.setAttribute('src', 'https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=a072abfb-f727-4a13-97a7-61fc775866d0&load=package.standard');
+        mapContainer.appendChild(ymapApiScript);
+      }
 
       setTimeout(() => {
         ymaps.ready(() => {

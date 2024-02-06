@@ -17,3 +17,7 @@
 .page__footer {
   flex: 0 0 268px;
 }
+
+.grecaptcha-badge {
+  visibility: hidden;
+}

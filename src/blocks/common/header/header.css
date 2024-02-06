@@ -14,6 +14,15 @@
   margin-left: -4px;
   font-size: 45px;
   text-transform: uppercase;
+  margin-block: 0;
+}
+
+.header__section-header_h2 {
+  font-size: 35px;
+}
+
+.header__section-header_h3 {
+  font-size: 30px;
 }
 
 .header__accent {

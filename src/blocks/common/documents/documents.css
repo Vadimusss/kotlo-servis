@@ -272,3 +272,17 @@
     margin-bottom: 0;
   }
 }
+
+@media (max-width: 359px) {
+  .documents {
+    grid-template-columns: 1fr 320px 1fr;
+  }
+
+  .documents__list-item {
+    margin-left: 10px;
+  }
+
+  .documents__example {
+    flex: 0 0 300px;
+  }
+}

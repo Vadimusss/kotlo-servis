@@ -2,7 +2,7 @@
   position: relative;
   display: grid;
   grid-template-columns: 1fr 406px 936px 1fr;
-  grid-template-rows: 40px 123px min-content;
+  grid-template-rows: 40px 100px min-content;
   grid-template-areas: 'aside intro intro right-field'
   'aside header description right-field'
   'aside tables tables right-field';
@@ -40,7 +40,6 @@
 @media (max-width: 1435px) {
   .prices {
     grid-template-columns: 1fr 336px 664px 1fr;
-    grid-template-rows: 40px 114px min-content;
   }
 
   .prices__aside {
@@ -67,14 +66,14 @@
 @media (max-width: 870px) {
   .prices {
     grid-template-columns: 1fr 252px 388px 1fr;
-    grid-template-rows: 40px 178px min-content;
+    grid-template-rows: 40px 120px min-content;
   }
 }
 
 @media (max-width: 648px) {
   .prices {
     grid-template-columns: 1fr 360px 1fr;
-    grid-template-rows: 50px 156px min-content;
+    grid-template-rows: 50px repeat(2, min-content);
     grid-template-areas: 'aside header right-field'
     'aside description right-field'
     'aside tables right-field';
@@ -92,5 +91,12 @@
   .prices__description {
     text-align: center;
     padding: 0 10px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 359px) {
+  .prices {
+    grid-template-columns: 1fr 320px 1fr;
   }
 }

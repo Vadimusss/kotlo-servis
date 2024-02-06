@@ -39,6 +39,7 @@
 
   .insertion::before {
     left: 0;
+    height: calc(100% + 10px);
   }
 
   .insertion::after {

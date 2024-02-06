@@ -199,7 +199,7 @@
 
   .callback-form__link {
     top: -40px;
-    right: 149px;
+    right: calc(50% - 40px);
   }
 
   .callback-form__wrapper::after {
@@ -229,6 +229,16 @@
   }
 
   .callback-form__gray-block {
+    display: none;
+  }
+}
+
+@media (max-width: 359px) {
+  .callback-form {
+    grid-template-columns: 1fr 320px 1fr;
+  }
+
+  .callback-form__wrapper::after {
     display: none;
   }
 }

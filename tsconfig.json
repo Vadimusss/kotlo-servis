@@ -7,9 +7,23 @@
     "strict": true,
     "module": "NodeNext",
     "moduleResolution": "nodenext",
-    "types": ["@yandex/ymaps3-types"]
+    "esModuleInterop": true,
+    "typeRoots": [
+      "./types",
+      "./node_modules/@types",
+      "./node_modules/@yandex/ymaps3-types"
+    ],
+    "paths": {
+      "ymaps3": [
+        "./node_modules/@yandex/ymaps3-types",
+      ],
+    },
   },
   "include": [
     "src/",
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
   ],
 }

@@ -1,7 +1,7 @@
 /* eslint-disable no-undef */
 import debounce from '../../../utils';
 
-const setMapCenter = (map) => {
+const setMapCenter = (map: ymaps.Map) => {
   const width = window.innerWidth;
   if (width > 1435) {
     map.setCenter([55.8138, 37.4980]);
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (typeof ymaps === 'undefined') {
         const ymapApiScript = document.createElement('script');
         ymapApiScript.setAttribute('src', 'https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=a072abfb-f727-4a13-97a7-61fc775866d0&load=package.standard');
-        mapContainer.appendChild(ymapApiScript);
+        mapContainer?.appendChild(ymapApiScript);
       }
 
       setTimeout(() => {
@@ -54,11 +54,12 @@ document.addEventListener('DOMContentLoaded', () => {
         });
       }, 500);
 
-      mapContainer.removeEventListener('mouseover', startLazyMap);
-      mapContainer.removeEventListener('touchstart', startLazyMap);
+      mapContainer?.removeEventListener('mouseover', startLazyMap);
+      mapContainer?.removeEventListener('touchstart', startLazyMap);
     }
   }
-
-  mapContainer.addEventListener('mouseover', startLazyMap);
-  mapContainer.addEventListener('touchstart', startLazyMap);
+  if (mapContainer) {
+    mapContainer.addEventListener('mouseover', startLazyMap);
+    mapContainer.addEventListener('touchstart', startLazyMap);
+  }
 }, false);

@@ -5,14 +5,15 @@ import debounce from '../../../utils';
 const showFixedNavBar = () => {
   const navBar = document.querySelector('.fixed-nav-bar');
 
-  if (!navBar) {
+  if (navBar === null) {
     return;
   }
 
-  const header = document.querySelector('.page-header');
-  const keyHight = header.offsetHeight - 164;
+  const headerHeight = document.querySelector<HTMLElement>('.page-header')?.offsetHeight;
+  const showCorrectionPx = 164;
+  const keyHight = headerHeight !== undefined ? headerHeight - showCorrectionPx : window.innerHeight;
 
-  if (window.pageYOffset > keyHight) {
+  if (window.scrollY > keyHight) {
     navBar.classList.add('fixed-nav-bar_visible');
   } else {
     navBar.classList.remove('fixed-nav-bar_visible');

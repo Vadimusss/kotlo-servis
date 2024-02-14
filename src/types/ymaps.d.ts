@@ -6,12 +6,12 @@ declare module ymaps {
   }
 
   export class Placemark {
-    constructor(coordinates: Number[], {}: {}, {}:
+    constructor(coordinates: number[], {}: {}, {}:
       {
         iconLayout: string,
         iconImageHref: string,
-        iconImageSize: Number[],
-        iconImageOffset: Number[],
+        iconImageSize: number[],
+        iconImageOffset: number[],
       }
     )
   }
@@ -23,7 +23,7 @@ declare module ymaps {
   export class Map {
     constructor(selector: string, state: MapState);
 
-    setCenter(coordinates: Number[]): void;
+    setCenter(coordinates: number[]): void;
     geoObjects: GeoObjects;
   }
 

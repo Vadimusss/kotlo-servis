@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const contentBlock = button.nextElementSibling;
 
         button.classList.toggle('drop-down-block__button_open');
-        contentBlock.classList.toggle('drop-down-block__content_open');
+        contentBlock?.classList.toggle('drop-down-block__content_open');
       });
     });
   }

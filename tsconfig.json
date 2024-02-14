@@ -10,14 +10,8 @@
     "esModuleInterop": true,
     "typeRoots": [
       "./types",
-      "./node_modules/@types",
-      "./node_modules/@yandex/ymaps3-types"
+      "./node_modules/@types"
     ],
-    "paths": {
-      "ymaps3": [
-        "./node_modules/@yandex/ymaps3-types",
-      ],
-    },
   },
   "include": [
     "src/",

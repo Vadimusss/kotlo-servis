@@ -2,39 +2,36 @@
 import data from './objects.json';
 import debounce from '../../../utils';
 
-const setZoomControlPosition = (map: ymaps.Map) => {
+const setZoomControlPosition = (control: ymaps.IControl | null) => {
+  if (control === null) {
+    return;
+  }
+
   const width = window.innerWidth;
   let contentWidth = '';
   let offsetRight = '40px';
-
-  const manager = new ymaps.control.Manager(map);
 
   if (width > 1435) {
     contentWidth = '1342px';
   } else if (width > 1110) {
     contentWidth = '1000px';
   } else if (width > 870) {
-    contentWidth = '640px';
+    contentWidth = '768px';
     offsetRight = '20px';
   } else if (width > 648) {
     contentWidth = '640px';
     offsetRight = '20px';
   } else {
-    manager.add('zoomControl', {
-      position: {
-        left: '20px',
-        top: '40px',
-      },
+    control.options.set('position', {
+      left: '20px',
+      top: '40px',
     });
-
     return;
   }
 
-  manager.add('zoomControl', {
-    position: {
-      left: `calc((100vw - ${contentWidth}) / 2 + ${offsetRight})`,
-      top: '40px',
-    },
+  control.options.set('position', {
+    left: `calc((100vw - ${contentWidth}) / 2 + ${offsetRight})`,
+    top: '40px',
   });
 };
 
@@ -42,7 +39,10 @@ const init = () => {
   const map = new ymaps.Map('objects__map', {
     center: [55.75399, 37.62209],
     zoom: 8,
+    controls: ['zoomControl'],
   });
+
+  const zoomControl = map.controls.get('zoomControl');
 
   const objectManager = new ymaps.ObjectManager({
     clusterize: true,
@@ -56,8 +56,8 @@ const init = () => {
 
   objectManager.add(data);
 
-  setZoomControlPosition(map);
-  return map;
+  setZoomControlPosition(zoomControl);
+  return { map, zoomControl };
 };
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -68,19 +68,17 @@ document.addEventListener('DOMContentLoaded', () => {
   function startLazyMap() {
     if (!mapLoaded) {
       mapLoaded = true;
-      console.log(`1 ===> ${mapLoaded}`);
       if (typeof ymaps === 'undefined') {
-        console.log(`2 ===> ${mapLoaded}`);
         const ymapApiScript = document.createElement('script');
         ymapApiScript.setAttribute('src', 'https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=a072abfb-f727-4a13-97a7-61fc775866d0&load=package.standard');
         mapContainer?.appendChild(ymapApiScript);
       }
       setTimeout(() => {
         ymaps.ready(() => {
-          const map = init();
+          const { map, zoomControl } = init();
 
           window.addEventListener('resize', debounce(() => {
-            setZoomControlPosition(map);
+            setZoomControlPosition(zoomControl);
           }, 300));
 
           const localities = document.querySelectorAll('.objects__list-item');

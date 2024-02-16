@@ -4,8 +4,14 @@ declare module ymaps {
 
   export interface IGeometry {
 
-    customField: string;
-
     getCoordinates(): number[];
+  }
+
+  export interface IControl {
+
+    options: {
+
+      set(type: string, { left, top }: { left: string, top: string }): void; 
+    }
   }
 }

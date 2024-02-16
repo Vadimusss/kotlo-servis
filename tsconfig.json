@@ -8,6 +8,7 @@
     "module": "NodeNext",
     "moduleResolution": "nodenext",
     "esModuleInterop": true,
+    "resolveJsonModule": true,
     "typeRoots": [
       "./types",
       "./node_modules/@types"

@@ -4,18 +4,21 @@ import debounce from '../../../utils';
 const makeFitHeader = () => {
   const width = document.documentElement.clientWidth;
   const header = document.querySelector('.page-header__main-header_major');
-  header.style.fontSize = '';
-  const { length } = header.textContent;
-  if (width > 1435 || length <= 7) {
-    return;
-  }
 
-  const currentFontSize = parseFloat(getComputedStyle(header, false).getPropertyValue('font-size'));
+  if (header !== null && header instanceof HTMLElement) {
+    header.style.fontSize = '';
+    const { length } = header.textContent ?? '';
+    if (width > 1435 || length <= 7) {
+      return;
+    }
 
-  if (width > 1110) {
-    header.style.fontSize = `${currentFontSize - 20 * (length - 7)}px`;
-  } else if (width > 648) {
-    header.style.fontSize = `${currentFontSize - 7 * (length - 7)}px`;
+    const currentFontSize = parseFloat(getComputedStyle(header).getPropertyValue('font-size'));
+
+    if (width > 1110) {
+      header.style.fontSize = `${currentFontSize - 20 * (length - 7)}px`;
+    } else if (width > 648) {
+      header.style.fontSize = `${currentFontSize - 7 * (length - 7)}px`;
+    }
   }
 };
 

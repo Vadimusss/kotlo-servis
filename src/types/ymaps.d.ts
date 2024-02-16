@@ -1,35 +1,11 @@
+/// <reference path="../../node_modules/@types/yandex-maps/index.d.ts" />
+
 declare module ymaps {
-  export function ready(callback: () => void): Promise;
 
-  class Promise {
-    then(onFulfilled?: Function, onRejected?: Function, onProgress?: Function, ctx?: any): Promise;
-  }
+  export interface IGeometry {
 
-  export class Placemark {
-    constructor(coordinates: number[], {}: {}, {}:
-      {
-        iconLayout: string,
-        iconImageHref: string,
-        iconImageSize: number[],
-        iconImageOffset: number[],
-      }
-    )
-  }
+    customField: string;
 
-  export class GeoObjects {
-    add(child: Placemark): void;
-  }
-
-  export class Map {
-    constructor(selector: string, state: MapState);
-
-    setCenter(coordinates: number[]): void;
-    geoObjects: GeoObjects;
-  }
-
-  export class MapState {
-    center: number[];
-    controls?: string[];
-    zoom: number;
+    getCoordinates(): number[];
   }
 }

@@ -3,7 +3,7 @@ import 'jquery-modal/jquery.modal';
 import 'jquery-modal/jquery.modal.css';
 
 document.addEventListener('DOMContentLoaded', () => {
-  $.modal.defaults = {
+  jQuery.modal.defaults = {
     escapeClose: true,
     clickClose: true,
     showClose: true,
@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   const modal = document.getElementById('request-modal');
-  modal.addEventListener('wpcf7mailsent', () => {
-    setTimeout(() => $.modal.close(), 2000);
+  modal?.addEventListener('wpcf7mailsent', () => {
+    setTimeout(() => jQuery.modal.close(), 2000);
   });
 }, false);

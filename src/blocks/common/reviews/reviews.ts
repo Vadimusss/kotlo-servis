@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     autoplay: false,
     margin: 0,
     nav: true,
-    navText: false,
+    navText: ['', ''],
     dots: false,
     items: 1,
     navClass: ['reviews__slider-button reviews__slider-button_type_prev', 'reviews__slider-button reviews__slider-button_type_next'],

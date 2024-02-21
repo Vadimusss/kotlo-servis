@@ -12,7 +12,7 @@ module.exports = (env, argv) => {
     .filter((value) => value.includes('.html'))
     .map((value) => value.replace('.html', ''));
 
-  const entryPoints = pageNames.reduce((acc, value) => ({ ...acc, ...{ [value]: path.resolve(__dirname, pages, `${value}.js`) } }), {});
+  const entryPoints = pageNames.reduce((acc, value) => ({ ...acc, ...{ [value]: path.resolve(__dirname, pages, `${value}.ts`) } }), {});
 
   const copyPaths = pageNames.map((name) => ({
     from: path.resolve(__dirname, `${pages}/${name}.html`),
